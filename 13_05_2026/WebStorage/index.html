@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="username" placeholder="enter the name">
+
+    <button onclick="saveData()">save</button>
+
+
+    <!-- get data from local storage -->
+
+    <button onclick="getData()">Get data</button>
+
+    <h2 id="result"></h2>
+
+    <!-- remove data from local storage -->
+
+    <button onclick="removeData()">Remove Data</button>
+
+    <!-- clear all data -->
+
+    <button onclick="cleardata()">clear all</button>
+
+
+
+    <!-- storing object -->
+    <h3>storing object </h3>
+    Name : <input type="text" id="usernameObj" placeholder="enter the name"><br>
+    Age : <input type="text" id="age" placeholder="enter the age"><br>
+    Role : <input type="text" id="role" placeholder="enter the role"><br>
+
+    <button onclick="storeObject()">Store Object</button>
+
+
+    <!-- Session Storage -->
+
+    <h3>Session storage</h3>
+    Name : <input type="text" id="usernameSession" placeholder="enter the name"><br>
+    Email : <input type="email" id="emailSession" placeholder="enter the email"><br>
+    Age : <input type="text" id="ageSession" placeholder="enter the age"><br>
+    Role : <input type="text" id="roleSession" placeholder="enter the role"><br>
+    
+    <button onclick="saveSession()">save Session</button><br>
+    <button onclick="getSession()">get Session</button>
+    <h2 id="show"></h2>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
