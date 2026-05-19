@@ -1,5 +1,7 @@
 let container = document.getElementById("container");
 
+
+//get data
 async function getdata() {
     try {
         let response = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -12,8 +14,8 @@ async function getdata() {
             let div = document.createElement("div");
 
             div.innerHTML = `<h3>${item.title}</h3>
-                             <p>${item.body}</p>
-                             <hr>`;
+<p>${item.body}</p>
+<hr>`;
 
             container.append(div);
         });
@@ -23,3 +25,4 @@ async function getdata() {
         alert("Error fetching data");
     }
 }
+
