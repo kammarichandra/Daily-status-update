@@ -23,4 +23,3 @@ async function getdata() {
         alert("Error fetching data");
     }
 }
-// getdata();
