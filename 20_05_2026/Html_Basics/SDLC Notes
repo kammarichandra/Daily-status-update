@@ -1,0 +1,66 @@
+
+SDLC(Software Development life cycle):
+
+--> this process is used to develop software step by step  in organizes way
+
+1. Requirement : 
+--> collect the project requirements from client
+--> Understand the application what the application should do
+
+2. planning : 
+-->decide the project plan , scope , budget , time and resources
+
+3. Design : 
+--> create Ui design , system architectur and decide the database
+
+4. Development : 
+--> Developers will write the code build frountend and backend
+
+5. Testing : 
+--> testers will test the application for bugs/errors
+
+6. Deployment :
+--> Release the application to users/server
+
+7. Maintenance :
+--> Fix the bugs and update the features after relase
+
+
+Browser Engine :
+
+--> it wil convert Html , css and javascript in to a webpage visible to users
+
+Working of Browser Engine 
+
+1. Browser reads html
+2. creates DOM tree
+3. Reads css and creates CSSOM 
+4. combines DOM + CSSOM -> Render tree
+5. layout caluclation
+6. prints webpage on screen 
+
+DOM(Document Object Model)
+
+-->Dom is a tree structure representation of html document 
+
+javascript uses DOM to :
+ -->Access elements
+ -->Modify content
+ -->Change Styles
+ -->Add/remove elements
+
+
+ Application Workflow
+  
+  
+  user request 
+       |
+    Browser
+       |
+    Server
+       |
+    Database
+       |
+    Server Response
+       |
+    Browser Displays Output            
