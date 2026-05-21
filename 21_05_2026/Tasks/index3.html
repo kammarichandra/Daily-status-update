@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Elements and validations </h1>
+
+    <form >
+
+        <!-- Name -->
+         <label >Full Name : </label><br>
+         <input type="text" placeholder="enter your full name" required  minlength="3" >
+         <br><br>
+
+         <!-- email -->
+
+         <label for="">Email :</label><br>
+         <input type="email" placeholder="enter your email " required >
+         <br><br>
+
+         <!-- password -->
+
+         <label for="">Password : </label><br>
+         <input type="password" placeholder="enter your password" required minlength="3">
+         <br><br>
+
+         <!-- phone -->
+          <label for="">Phone Number : </label><br>
+          <input type="tel" placeholder="enter your phone number " pattern="[0-9]{10}" required>
+          <br><br>
+
+          <!-- Age -->
+
+          <label for="">Age : </label><br>
+          <input type="number" min="18" max="60" required>
+          <br><br>
+
+          <!-- date -->
+
+          <label for="">Date of Birth : </label><br>
+          <input type="date" required>
+          <br><br>
+
+          <!-- Gender -->
+           <label >Gender : </label><br>
+        <input type="radio" name="Gender" required>Male
+        <input type="radio" name="Gender">Female
+        <br><br>
+
+        <!-- Courses -->
+         <label>Courses</label><br>
+        <input type="checkbox">HTML
+        <input type="checkbox">CSS
+        <input type="checkbox">JAVA SCRIPT
+        <br><br>
+
+        <!-- city -->
+
+        <label for="">city : </label><br>
+
+        <select name="" id="" required>
+              
+            <option value="">Select city</option>
+            <option value="">HYD</option>
+            <option value="">BNG</option>
+            <option value="">CNN</option>
+        </select>
+        <br><br>
+
+        <!-- file upload -->
+
+        <label for="">Upload resume :</label><br>
+
+        <input type="file" required>
+        <br><br>
+
+        <!-- Message -->
+         <label for="">Message :</label><br>
+         <textarea name="" id="" rows="4" cols="30" placeholder="enter your Message"></textarea>
+         <br><br>
+
+         <!-- buttons -->
+          <input type="submit" value="reguster">
+          <input type="reset" value="clear">
+    </form>
+
+    
+</body>
+</html>
