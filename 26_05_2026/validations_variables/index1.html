@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- input validations  -->
+
+    <form onsubmit="return validateinput()">
+        <label>Name :</label>
+        <input type="text" id="name" required placeholder="enter valid input">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br><br>
+
+    <!-- name validation -->
+
+    <form onsubmit="return validatename()">
+        <label>Name :</label>
+        <input type="text" id="username" required placeholder="enter your name">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br><br>
+
+    <!-- number validation -->
+
+    <form onsubmit="return validateAge()">
+        <label>Age :</label>
+        <input type="number" id="age" required placeholder="enter your age">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="./index1.js"></script>
+</body>
+
+</html>
