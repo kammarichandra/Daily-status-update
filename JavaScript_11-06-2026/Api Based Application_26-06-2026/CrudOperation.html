@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: cursive;
+            margin: 24px;
+            color: #222
+        }
+
+        h2 {
+            color: black;
+            margin-bottom: 12px
+        }
+
+        .controls {
+            margin-bottom: 12px
+        }
+
+        button {
+            background: #0066cc;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            margin-right: 8px;
+            border-radius: 4px;
+            cursor: pointer
+        }
+
+        button:hover {
+            background: #005bb5
+        }
+
+        #output {
+            margin-top: 16px
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 8px
+        }
+
+        td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd
+        }
+
+        th {
+            background: #f4f6f8
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2> Fetch Api Crud Operation</h2>
+
+    <div class="controls">
+        <button onclick="Getpost()">Get Posts</button>
+        <button onclick="Post()">Post</button>
+        <button onclick="Put()">Put</button>
+        <button onclick="Delete()">Delete</button>
+    </div>
+    <hr>
+
+    <div id="output">
+
+    </div>
+    <script src="./CrudOperation.js"></script>
+</body>
+
+</html>

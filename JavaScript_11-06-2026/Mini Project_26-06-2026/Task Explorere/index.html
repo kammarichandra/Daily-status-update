@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 40px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+/* Button Container */
+button {
+    padding: 10px 18px;
+    margin: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3498db;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Center Buttons */
+body > button {
+    display: inline-block;
+}
+
+body {
+    text-align: center;
+}
+
+/* Task List */
+#taskList {
+    list-style: none;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0;
+}
+
+/* Task Item */
+#taskList li {
+    background: white;
+    margin-bottom: 12px;
+    padding: 15px;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+#taskList li:hover {
+    transform: translateX(5px);
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+</style>
+<body>
+    
+    <h1>Task Explorer Dashboard</h1>
+
+    <button id="loadbtn">Load Tasks</button>
+
+    <button id="favbtn">Show Favorites</button>
+
+    <ul id="tasklist"></ul>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
