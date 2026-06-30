@@ -1,0 +1,19 @@
+body{
+
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h1{
+    color: blue;
+}
+p{
+    color: gray;
+    font-size: 20px;
+}
+button{
+    background-color: green;
+    color: wheat;
+    padding: 10px , 20px;
+    border-radius: 5px;
+}

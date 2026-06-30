@@ -1,0 +1,62 @@
+*{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* element selector  */
+
+p{
+    color: blue;
+}
+
+/* class selector  */
+
+.special{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* id selector  */
+
+#1{
+    color: blueviolet;
+}
+
+/* group selector  */
+
+h2,h3,h4{
+
+    color: green;
+}
+
+
+/* descendant selector  */
+
+.container p{
+
+    background-color: lightblue;
+    padding: 10px;
+}
+
+/* child selector  */
+
+.parent > p{
+
+    color: purple;
+    font-weight: bold;
+}
+
+/* adjasent sibling selector  */
+
+.box+p{
+    background-color: orange;
+    color: wheat;
+    padding: 10px;
+}
+
+/* general sibling selectotr  */
+
+.card~p{
+    border: 2px solid black;
+    padding: 8px;
+}
