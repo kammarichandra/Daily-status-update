@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container{
+
+        width:500px ;
+        height: 200px;
+        border: 2px solid black;
+    }
+
+    div{
+        width: 500px;
+        padding: 10px;
+        color: white;
+    }
+
+    .left{
+
+        float: left;
+        width: 400px;
+        text-align: center;
+        background: steelblue;
+    }
+
+    .right{
+
+        float: right;
+        margin: 40px;
+        display: inline;
+        width: 400px;
+        text-align: center;
+        background:red ;
+    }
+
+    .container1{
+        border: 2px solid black;
+        height: 200px;
+    }
+
+    .box{
+        width: 200px;
+        height: 100px;
+        float: left;
+        background: green;
+        color: white;
+    }
+
+
+.container2{
+
+    border: 2px solid black;
+    width: 600px;
+    height: 150px;
+}
+
+.left1{
+    float: left;
+    background: steelblue;
+}
+.center{
+    background: orange;
+}
+.right1{
+    float: right;
+    background: grey;
+}
+.clear{
+    clear: both;
+}
+
+.box4 {
+  float: left;
+  /* width: 150px;
+  height: 100px; */
+  /* background: lightblue; */
+  margin-right: 15px;
+}
+
+
+.box3 {
+  float: left;
+  /* width: 150px;
+  height: 100px; */
+  /* background: lightblue; */
+  margin-right: 15px;
+  clear: both;
+}
+
+.footer {
+  clear: both;
+  background: lightgreen;
+  padding: 10px;
+}
+</style>
+<body>
+    <h3>float and clear </h3>
+
+    <div class="container">
+
+        <div class="left">
+            left column
+        </div>
+
+        <div class="right">
+            right column
+        </div>
+    </div>
+
+<h3>float without clearing</h3>
+
+<div class="container1">
+
+    <div class="box">
+        floating box
+    </div>
+
+</div>
+
+<div class="footer">
+    footer
+</div>
+
+
+<h3>three layouts </h3>
+
+<div class="container2">
+
+    <div class="left1">left</div>
+    <div class="center">center</div>
+    <div class="right1">right</div>
+    <div class="clear"></div>
+
+</div>
+
+
+
+<div class="box4">Box </div>
+<p>
+  This paragraph wraps around the floated box because Box 1 is floated to the left.
+</p>
+<br><br><br><br><br><br>
+
+<div class="box3">Box 3</div>
+
+<p>
+  This paragraph wraps around the floated box.
+  Lorem ipsum dolor sit amet consectetur adipisicing.
+</p>
+
+
+<div class="footer">Footer</div>
+</body>
+</html>

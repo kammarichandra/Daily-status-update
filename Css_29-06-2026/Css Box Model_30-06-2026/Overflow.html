@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 250px;
+        height: 80px;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 10px;
+    }
+    .visible{
+
+        overflow: visible;
+    }
+    .hidden{
+
+        overflow: hidden;
+    }
+    .scroll{
+        overflow: scroll;
+    }
+    .auto{
+
+        overflow: auto;
+    }
+
+    .solid{
+
+        outline: 3px solid red;
+    }
+    .dashed{
+
+        outline: 3px dashed green;
+    }
+    .dotted{
+        outline: 3px dotted blue;
+    }
+    .double{
+        outline: 3px double purple;
+    }
+
+    .border{
+        border: 2px solid black;
+    }
+    .outline{
+        border: 2px solid green;
+        outline:  2px solid red;
+    }
+</style>
+<body>
+    
+    <div class="visible">
+        Lorem ipsum dolor sit amet.
+    </div>
+
+    <div class="hidden">
+        hidden extra content is clipped and cannot be seen
+    </div>
+
+    <div class="scroll">
+        scroll bars visible
+    </div>
+
+    <div class="auto">
+        scrollbarss appear only when needed
+    </div>
+
+    <h2>Outline styles</h2>
+
+    <div class="soild">outline solid</div>
+    <div class="dashed">outline dashed</div>
+    <div class="dotted">outline dotted</div>
+    <div class="double">outline double</div>
+
+    <h2>border and outline</h2>
+
+    <div class="border">border</div>
+
+    <div class="outline">outline</div>
+
+</body>
+</html>
