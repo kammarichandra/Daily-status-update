@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: lightgray;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr 1fr;
+            grid-template-rows: 80px 200px 150px 150px 80px;
+            gap: 15px;
+            min-height: 100vh;
+            justify-items: stretch;
+            align-items: stretch;
+        }
+
+        .item {
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .header {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+            background: #333;
+        }
+
+        .sidebar {
+            grid-column: 1 / 2;
+            grid-row: 2 / 5;
+            background: #ff9800;
+        }
+
+        .content {
+            grid-column: 2/ 4;
+            grid-row: 2 / 3;
+            background: #4caf50;
+        }
+
+        .card1 {
+            grid-column: 2 /3;
+            grid-row: 3 / 4;
+            background: #2196F3;
+        }
+
+        .card2 {
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+            background: #2196F3;
+        }
+
+        .card3 {
+            grid-column: 2 / 4;
+            grid-row: 4 / 5;
+            background: #9c27b0;
+        }
+
+        .footer {
+            grid-column: 1 / 4;
+            grid-row: 5 / 6;
+            background: #222;               
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header item">Header</div>
+        <div class="sidebar item">Sidebar</div>
+        <div class="content item">Content</div>
+        <div class="item card1">Card 1</div>
+        <div class="item card2">Card 2</div>
+        <div class="item card3">Card 3</div>
+        
+        <div class="footer item">Footer</div>
+    </div>
+</body>
+
+</html>

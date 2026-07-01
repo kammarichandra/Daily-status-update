@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas: "header header" "nav nav" "main sidebar" "footer footer";
+
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 80px 60px 1fr 70px;
+
+        min-height: 100vh;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    nav{
+        background: lightcyan;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        grid-area: nav;
+    }
+    header {
+        grid-area: header;
+        background: aqua;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        grid-area: main;
+        background: lightblue;
+        padding: 20px;
+
+    }
+
+    aside {
+        grid-area: sidebar;
+        background: lightcoral;
+        padding: 20px;
+    }
+
+    footer {
+        grid-area: footer;
+        background: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "sidebar"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<body>
+    <div class="container">
+
+        <header>header</header>
+        <nav>Navigation</nav>
+        <main>Main content</main>
+        <aside>sidebar</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>
