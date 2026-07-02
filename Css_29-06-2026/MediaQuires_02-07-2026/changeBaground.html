@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: lightblue;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    /* tablet  */
+    @media(min-width : 769px) {
+        body {
+            background: lightgreen;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+    /* laptop */
+    @media(min-width : 1069px) {
+        body {
+            background: lightyellow;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+    }
+
+
+    /* Desktop */
+    @media (min-width: 1440px) {
+        body {
+            background: lightcoral;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <h1>resize the border</h1>
+
+    <div class="box"></div>
+</body>
+
+</html>

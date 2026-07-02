@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: rgb(117, 117, 172);
+        margin: 20px;
+    }
+
+    a {
+        background: rgb(95, 105, 114);
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    @media(min-width : 760px) {
+
+        nav {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .layout {
+            flex-direction: row;
+        }
+
+        /* aside{
+            width: 30%;
+        }
+        main{
+            width: 70%;
+        } */
+    }
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        background: orange;
+        padding: 20px;
+    }
+
+    main {
+        background: lightgray;
+        padding: 20px;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .card {
+        background: purple;
+        color: white;
+        padding: 30px;
+        flex: 100%;
+        text-align: center;
+    }
+
+    @media(min-width : 700px) {
+        .card {
+            flex: calc(35px - 10px);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .card {
+            flex: calc(15% - 10px);
+        }
+    }
+
+    
+</style>
+
+<body>
+    <nav>
+c:\Users\Chandra Shekar\Pictures\Screenshots\Responsive nav output.png
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">Contact</a>
+
+    </nav>
+
+    <div class="layout">
+        <aside>Sidebar</aside><br>
+        <main>main content</main>
+    </div><br><br>
+
+    <div class="cards">
+        <div class="card">card 1</div>
+        <div class="card">card 2</div>
+        <div class="card">card 3</div>
+        <div class="card">card 4</div>
+    </div>
+
+</body>
+
+</html>

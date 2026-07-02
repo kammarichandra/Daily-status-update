@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Base styles (Mobile first) */
+body {
+    font-family: Arial;
+    text-align: center;
+    padding: 50px;
+    background: lightblue;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    /* cursor: pointer; */
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+    body {
+        background: lightgreen;
+    }
+}
+
+ /* 2. Laptop */
+@media (min-width: 1024px) {
+    body {
+        background: lightyellow;
+    }
+}
+
+ /* 3. Desktop */
+@media (min-width: 1440px) {
+    body {
+        background: lightcoral;
+    }
+}
+
+ /* 4. Portrait mode */
+@media (orientation: portrait) {
+    h1 {
+        color: blue;
+    }
+}
+
+ /* 5. Landscape mode */
+@media (orientation: landscape) {
+    h1 {
+        color: purple;
+    }
+}
+
+ /* 6. Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #121212;
+        color: white;
+    }
+
+    button {
+        background: white;
+        color: black;
+    }
+}
+
+/* 7. Hover devices only */
+@media (hover: hover) {
+    button:hover {
+        background: green;
+        color: white;
+    }
+}
+
+   /* 8. Touch devices (no hover) */
+@media (hover: none) {
+    button {
+        padding: 20px;
+        font-size: 20px;
+        background: orange;
+    }
+}
+
+/* 9. Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none;
+    }
+}
+</style>
+<body>
+
+<h1>Responsive Media Query Demo</h1>
+<button>Click Me</button>
+
+</body>
+</html>

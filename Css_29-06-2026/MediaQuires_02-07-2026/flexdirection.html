@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container div {
+
+        background: orange;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .grid div {
+        background: skyblue;
+        padding: 30px;
+        text-align: center;
+    }
+
+    
+    @media(min-width: 768px) {
+        .container {
+            flex-direction: row;
+        }
+
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+
+    /* laptop */
+
+    @media (min-width: 1024px) {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    /* Desktop */
+    @media (min-width: 1440px) {
+        .grid {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+
+    </div>
+<br><br>
+    <div class="grid">
+
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+
+    </div>
+</body>
+
+</html>
