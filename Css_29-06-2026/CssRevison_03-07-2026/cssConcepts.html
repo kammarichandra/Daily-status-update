@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: lightgray;
+    }
+
+    header {
+        text-align: center;
+        font-size: 20px;
+        background: black;
+        color: white;
+    }
+
+    header p {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        background: grey;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    nav ul li a:hover {
+        background: rebeccapurple;
+        border-radius: 5px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+
+    }
+
+    .card {
+        width: 250px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        border-radius: 5px;
+        border: 2px solid black;
+    }
+
+    .container1 {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 40px;
+    }
+
+    .item {
+        background: orange;
+        padding: 40px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .btn {
+        display: inline-block;
+        color: white;
+        padding: 20px;
+        border: none;
+        border-radius: 6px;
+    }
+
+    .btn:hover {
+        background: green;
+    }
+
+    .box {
+        width: 250px;
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid black;
+        background: white;
+    }
+
+    .float {
+        float: left;
+        margin-right: 15px;
+        width: 220px;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    ul.practice li:first-child {
+        color: red;
+    }
+
+    ul.practice li:last-child {
+        color: green;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+
+    th {
+        /* background: var(--primary); */
+        color: black;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .overflow-box {
+        width: 250px;
+        height: 100px;
+        border: 2px solid black;
+        overflow: auto;
+        margin: 20px;
+    }
+
+    @media(max-width:768px) {
+
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        header {
+            background: black;
+        }
+
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1 class="title">Complete css concepts</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <h2 style="text-align: center; margin: 20px;">flex cards</h2>
+
+    <section class="container">
+
+        <div class="card">
+            <h3>card 1</h3>
+            <p>Lorem ipsum dolor sit.</p>
+            <button class="btn">Read More </button>
+        </div>
+
+        <div class="card">
+            <h3>card 2</h3>
+            <p>Lorem ipsum dolor sit.</p>
+            <button class="btn">Read More </button>
+        </div>
+
+        <div class="card">
+            <h3>card 3</h3>
+            <p>Lorem ipsum dolor sit.</p>
+            <button class="btn">Read More </button>
+        </div>
+
+    </section>
+
+    <h2 style="text-align: center;">Css grid</h2>
+
+    <section class="container1">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+
+    </section>
+
+    <div class="box">
+        <h3>Box model</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+
+    <div class="position">
+        <div class="absolute">ADSS</div>
+    </div>
+
+    <img src="https://htmlburger.com/blog/wp-content/uploads/2023/04/modern-website-design-examples.jpg" alt=""
+        class="float">
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+
+    <div class="clear"></div>
+
+    <h2>input field</h2>
+
+    <input type="text" placeholder="enter name">
+
+    <h2>Practice list</h2>
+
+    <ul class="practice">
+        <li>html</li>
+        <li>css</li>
+        <li>javaScript</li>
+    </ul>
+
+
+    <h2>Table</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>course</th>
+        </tr>
+
+        <tr>
+            <td>Chandra</td>
+            <td>pritham</td>
+        </tr>
+
+        <tr>
+            <td>sara</td>
+            <td>Html</td>
+        </tr>
+
+    </table>
+
+    <div class="opacity-box"></div>
+
+    <div class="overflow-box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+</body>
+
+</html>

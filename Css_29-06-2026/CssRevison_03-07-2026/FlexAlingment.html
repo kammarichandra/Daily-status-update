@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 300px;
+        background: lightgray;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background: royalblue;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    .container1 {
+        display: grid;
+        grid-template-columns: repeat(4, 150px);
+        grid-template-rows: repeat(2, 150px);
+
+        justify-content: center;
+        align-content: center;
+
+        gap: 20px;
+        height: 500px;
+        background: #ddd;
+    }
+
+    .items {
+        background: tomato;
+        color: white;
+
+        display: grid;
+        place-items: center;
+
+        font-size: 24px;
+        grid-row: 2/3;
+    }
+    </style>
+
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <h1>grid alingment</h1>
+
+    <div class="container1">
+
+        <div class="items">a</div>
+        <div class="items">b</div>
+        <div class="items">c</div>
+        <div class="items">d</div>
+    </div>
+
+
+</body>
+
+</html>
