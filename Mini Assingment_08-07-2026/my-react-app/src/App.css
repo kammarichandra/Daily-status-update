@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.app-title {
+  margin: 0;
+  color: #4338ca;
+  font-size: 2rem;
+}
+
+.dashboard-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+}
+
+.dashboard-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.add-student-form,
+.student-list-section {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #334155;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #1d4ed8;
+}
+
+.student-list {
+  display: grid;
+  gap: 12px;
+}
+
+.student-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.student-name {
+  margin: 0 0 6px;
+  color: #111827;
+}
+
+.student-course {
+  margin: 0;
+  color: #475569;
+}
