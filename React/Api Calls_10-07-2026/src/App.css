@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+h3 {
+  color: navy;
+}
+
+div {
+  margin-bottom: 15px;
+}
