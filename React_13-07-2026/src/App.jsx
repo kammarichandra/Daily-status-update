@@ -21,7 +21,17 @@ import CounterPage from "./pages_13-07-2026/CounterPage_16-07-2026/CounterPage"
 import UserReducerPage from "./pages_13-07-2026/UserReducerPage_16-07-2026/UserReducerPage"
 import EcomercePage from "./pages_13-07-2026/E-comercePage_16-07-2026/EcomercePage"
 import ProjectPage1 from "./pages_13-07-2026/MiniProjectPage_16-07-2026/ProjectPage1"
-
+import StudentPage from "./pages_13-07-2026/ComponentPage_17-07-2026/StudentPage";
+import ClassPage from "./pages_13-07-2026/ClassComponentPage_17-07-2026/ClassPage"
+import EmpPage from "./pages_13-07-2026/Props&StatesPage_17-07-2026/EmpPage"
+import StatePage from "./pages_13-07-2026/StatePage_17-07-2026/StatePage"
+import StudentPage1 from "./pages_13-07-2026/StudentPage_17-07-2026/StudentPage1"
+import ChildtoParent from "./pages_13-07-2026/ChildtoParent_17-07-2026/ChildtoParent"
+import ParenttoChild from "./pages_13-07-2026/ParenttoChildPage_17-07-2026/ParenttoChild"
+import ChildtoChildPage from "./pages_13-07-2026/ChildtoChild_17-07-2026/ChildtoChildPage"
+import Apipage from "./pages_13-07-2026/ApiPage_17-07-2026/Apipage"
+import ChildPage from "./pages_13-07-2026/ChildPage_17-07-2026/ChildPage"
+import MainPage from "./pages_13-07-2026/MiniProjectPage_17-07-2026/MainPage"
 
 
 const App = () => {
@@ -112,6 +122,46 @@ const App = () => {
         <Route
           path="/MiniProjectPage_16-07-2026"
           element={<ProjectPage1/>}
+        />
+       <Route
+          path="/ComponentPage_17-07-2026"
+          element={<StudentPage />}
+        />
+        <Route
+          path="/ClassComponentPage_17-07-2026"
+          element={<ClassPage/>}
+        />
+        <Route
+          path="/Props&StatesPage_17-07-2026"
+          element={<EmpPage/>}
+        />
+        <Route
+          path="/StatePage_17-07-2026"
+          element={<StatePage/>}
+        />
+        <Route
+          path="/ParenttoChildPage_17-07-2026"
+          element={<ParenttoChild/>}
+        />
+        <Route
+          path="/ChildtoParent_17-07-2026"
+          element={<ChildtoParent/>}
+        />
+        <Route
+          path="/ChildtoChild_17-07-2026"
+          element={<ChildtoChildPage/>}
+        />
+        <Route
+          path="/ApiPage_17-07-2026"
+          element={<Apipage/>}
+        />
+        <Route
+          path="/ChildPage_17-07-2026"
+          element={<ChildPage/>}
+        />
+        <Route
+          path="/MiniProjectPage_17-07-2026"
+          element={<MainPage/>}
         />
       </Routes>
     </BrowserRouter>
