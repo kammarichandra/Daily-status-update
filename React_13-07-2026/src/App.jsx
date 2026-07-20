@@ -32,6 +32,13 @@ import ChildtoChildPage from "./pages_13-07-2026/ChildtoChild_17-07-2026/Childto
 import Apipage from "./pages_13-07-2026/ApiPage_17-07-2026/Apipage"
 import ChildPage from "./pages_13-07-2026/ChildPage_17-07-2026/ChildPage"
 import MainPage from "./pages_13-07-2026/MiniProjectPage_17-07-2026/MainPage"
+import RenderingPage from "./pages_13-07-2026/ConditionalRenderingPage_20-07-2026/RenderingPage"
+import MessagePage from "./pages_13-07-2026/MessagePage_20-07-2026/MessagePage"
+import UserPage1 from "./pages_13-07-2026/UserAtunticationPage_20-07-2026/UserPage1"
+import LoadingPage from "./pages_13-07-2026/LoadingPage_20-07-2026/LoadingPage"
+import Login from "./pages_13-07-2026/LoginPage_20-07-2026/Login"
+import Dashboard from "./pages_13-07-2026/DashboardPages_20-07-2026/Dashboard"
+
 
 
 const App = () => {
@@ -162,6 +169,30 @@ const App = () => {
         <Route
           path="/MiniProjectPage_17-07-2026"
           element={<MainPage/>}
+        />
+        <Route
+          path="/ConditionalRenderingPage_20-07-2026"
+          element={<RenderingPage/>}
+        />
+        <Route
+          path="/MessagePage_20-07-2026"
+          element={<MessagePage/>}
+        />
+        <Route
+          path="/UserAtunticationPage_20-07-2026"
+          element={<UserPage1/>}
+        />
+        <Route
+          path="/LoadingPage_20-07-2026"
+          element={<LoadingPage/>}
+        />
+        <Route
+          path="/LoginPage_20-07-2026"
+          element={<Login/>}
+        />
+        <Route
+          path="/DashboardPages_20-07-2026"
+          element={<Dashboard/>}
         />
       </Routes>
     </BrowserRouter>
