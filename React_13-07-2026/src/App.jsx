@@ -38,7 +38,11 @@ import UserPage1 from "./pages_13-07-2026/UserAtunticationPage_20-07-2026/UserPa
 import LoadingPage from "./pages_13-07-2026/LoadingPage_20-07-2026/LoadingPage"
 import Login from "./pages_13-07-2026/LoginPage_20-07-2026/Login"
 import Dashboard from "./pages_13-07-2026/DashboardPages_20-07-2026/Dashboard"
-
+import UseEffectPage from "./pages_13-07-2026/UseEffectPage_21-07-2026/UseEffectPage"
+import ApiPage1 from "./pages_13-07-2026/ApiPage1_21-07-2026/ApiPage1"
+import AxiosPage from "./pages_13-07-2026/AxiosPage_21-07-2026/AxiosPage"
+import ApiDataPage from "./pages_13-07-2026/ApiDataPage_21-07-2026/ApiDataPage";
+import Userpost from "./pages_13-07-2026/UserPostPage_21-07-2026/Userpost"
 
 
 const App = () => {
@@ -193,6 +197,26 @@ const App = () => {
         <Route
           path="/DashboardPages_20-07-2026"
           element={<Dashboard/>}
+        />
+        <Route
+          path="/UseEffectPage_21-07-2026"
+          element={<UseEffectPage/>}
+        />
+        <Route
+          path="/ApiPage1_21-07-2026"
+          element={<ApiPage1/>}
+        />
+        <Route
+          path="/AxiosPage_21-07-2026"
+          element={<AxiosPage/>}
+        />
+        <Route
+          path="/ApiDataPage_21-07-2026"
+          element={<ApiDataPage/>}
+        />
+        <Route
+          path="/UserPostPage_21-07-2026"
+          element={<Userpost/>}
         />
       </Routes>
     </BrowserRouter>
