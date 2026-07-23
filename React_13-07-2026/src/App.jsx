@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+// import "./FormValidation.css";
 // Components
 import ComponentsPage from "./pages_13-07-2026/components/ComponentsPage";
 // import ContextPage from "./pages_13-07-2026/Contextapi_13-07-2026/Contextpage";
@@ -43,7 +44,13 @@ import ApiPage1 from "./pages_13-07-2026/ApiPage1_21-07-2026/ApiPage1"
 import AxiosPage from "./pages_13-07-2026/AxiosPage_21-07-2026/AxiosPage"
 import ApiDataPage from "./pages_13-07-2026/ApiDataPage_21-07-2026/ApiDataPage";
 import Userpost from "./pages_13-07-2026/UserPostPage_21-07-2026/Userpost"
-
+import DynamicPage from "./pages_13-07-2026/Dynamic Page_23-07-2026/DynamicPage"
+import InputPage from "./pages_13-07-2026/InputPage_23-07-2026/InputPage"
+import FormValidationPage from "./pages_13-07-2026/FormValidationPage_23-07-2026/FormValidationPage"
+import ChangeHandlerPage from "./pages_13-07-2026/ChangeHandlerPage_23-07-2026/ChangeHandlerPage"
+import HocPage from "./pages_13-07-2026/HocPage_23-07-2026/HocPage"
+import BankPage from "./pages_13-07-2026/BankPage_23-07-2026/BankPage"
+import ProductPage from "./pages_13-07-2026/ProductHomePage_23-07-2026/ProductPage"
 
 const App = () => {
   return (
@@ -217,6 +224,34 @@ const App = () => {
         <Route
           path="/UserPostPage_21-07-2026"
           element={<Userpost/>}
+        />
+        <Route
+          path="/Dynamic Page_23-07-2026"
+          element={<DynamicPage/>}
+        />
+        <Route
+          path="/InputPage_23-07-2026"
+          element={<InputPage/>}
+        />
+        <Route
+          path="/FormValidationPage_23-07-2026"
+          element={<FormValidationPage/>}
+        />
+        <Route
+          path="/ChangeHandlerPage_23-07-2026"
+          element={<ChangeHandlerPage/>}
+        />
+        <Route
+          path="/HocPage_23-07-2026"
+          element={<HocPage/>}
+        />
+        <Route
+          path="/BankPage_23-07-2026"
+          element={<BankPage/>}
+        />
+        <Route
+          path="/ProductHomePage_23-07-2026"
+          element={<ProductPage/>}
         />
       </Routes>
     </BrowserRouter>
