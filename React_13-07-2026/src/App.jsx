@@ -51,6 +51,8 @@ import ChangeHandlerPage from "./pages_13-07-2026/ChangeHandlerPage_23-07-2026/C
 import HocPage from "./pages_13-07-2026/HocPage_23-07-2026/HocPage"
 import BankPage from "./pages_13-07-2026/BankPage_23-07-2026/BankPage"
 import ProductPage from "./pages_13-07-2026/ProductHomePage_23-07-2026/ProductPage"
+import ReactPart2Page from "./pages_13-07-2026/React Part 2_pag2_24-07-2026/ReactPart2Page"
+import HmsPage from "./pages_13-07-2026/Mini Project Page_24-07-2026/HmsPage"
 
 const App = () => {
   return (
@@ -252,6 +254,14 @@ const App = () => {
         <Route
           path="/ProductHomePage_23-07-2026"
           element={<ProductPage/>}
+        />
+        <Route
+          path="/React Part 2_pag2_24-07-2026"
+          element={<ReactPart2Page/>}
+        />
+        <Route
+          path="/Mini Project Page_24-07-2026"
+          element={<HmsPage/>}
         />
       </Routes>
     </BrowserRouter>
