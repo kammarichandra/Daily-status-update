@@ -53,6 +53,11 @@ import BankPage from "./pages_13-07-2026/BankPage_23-07-2026/BankPage"
 import ProductPage from "./pages_13-07-2026/ProductHomePage_23-07-2026/ProductPage"
 import ReactPart2Page from "./pages_13-07-2026/React Part 2_pag2_24-07-2026/ReactPart2Page"
 import HmsPage from "./pages_13-07-2026/Mini Project Page_24-07-2026/HmsPage"
+import ApiCalls2Page from "./pages_13-07-2026/Api-Calls2-Page_27-07-2026/ApiCalls2Page"
+import LSEPage from "./pages_13-07-2026/LSEPage_27-07-2026/LSEPage"
+import ReactMemoPage from "./pages_13-07-2026/ReactMemoPage_27-07-2026/ReactMemoPage"
+import PracticalPage from "./pages_13-07-2026/PracticalPage_27-07-2026/PracticalPage"
+import EmpProjectPage from "./pages_13-07-2026/EmpProjectPage_27-07-2026/EmpProjectPage"
 
 const App = () => {
   return (
@@ -262,6 +267,26 @@ const App = () => {
         <Route
           path="/Mini Project Page_24-07-2026"
           element={<HmsPage/>}
+        />
+        <Route
+          path="/Api-Calls2-Page_27-07-2026"
+          element={<ApiCalls2Page/>}
+        />
+        <Route
+          path="/LSEPage_27-07-2026"
+          element={<LSEPage/>}
+        />
+        <Route
+          path="/ReactMemoPage_27-07-2026"
+          element={<ReactMemoPage/>}
+        />
+        <Route
+          path="/PracticalPage_27-07-2026"
+          element={<PracticalPage/>}
+        />
+        <Route
+          path="/EmpProjectPage_27-07-2026"
+          element={<EmpProjectPage/>}
         />
       </Routes>
     </BrowserRouter>
