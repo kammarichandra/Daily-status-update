@@ -58,6 +58,11 @@ import LSEPage from "./pages_13-07-2026/LSEPage_27-07-2026/LSEPage"
 import ReactMemoPage from "./pages_13-07-2026/ReactMemoPage_27-07-2026/ReactMemoPage"
 import PracticalPage from "./pages_13-07-2026/PracticalPage_27-07-2026/PracticalPage"
 import EmpProjectPage from "./pages_13-07-2026/EmpProjectPage_27-07-2026/EmpProjectPage"
+import ReactHomePage from "./pages_13-07-2026/ReactHomePage_28-07-2026/ReactHomePage"
+import Hoc2Page from "./pages_13-07-2026/Hoc2_Page_28-07-2026/Hoc2Page"
+import ComparisonPage from "./pages_13-07-2026/Hoc&ComponentCompositionPage_28-07-2026/ComparisonPage"
+import CustomHookPage from "./pages_13-07-2026/CustomHookPage_28-07-2026/CustomHookPage"
+import StudentPage2 from "./pages_13-07-2026/StudentPage1_28-07-2026/StudentPage2"
 
 const App = () => {
   return (
@@ -287,6 +292,26 @@ const App = () => {
         <Route
           path="/EmpProjectPage_27-07-2026"
           element={<EmpProjectPage/>}
+        />
+        <Route
+          path="/ReactHomePage_28-07-2026"
+          element={<ReactHomePage/>}
+        />
+        <Route
+          path="/Hoc2_Page_28-07-2026"
+          element={<Hoc2Page/>}
+        />
+        <Route
+          path="/Hoc&ComponentCompositionPage_28-07-2026"
+          element={<ComparisonPage/>}
+        />
+        <Route
+          path="/CustomHookPage_28-07-2026"
+          element={<CustomHookPage/>}
+        />
+        <Route
+          path="/StudentPage1_28-07-2026"
+          element={<StudentPage2/>}
         />
       </Routes>
     </BrowserRouter>
