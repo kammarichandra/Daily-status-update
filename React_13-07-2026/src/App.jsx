@@ -63,6 +63,10 @@ import Hoc2Page from "./pages_13-07-2026/Hoc2_Page_28-07-2026/Hoc2Page"
 import ComparisonPage from "./pages_13-07-2026/Hoc&ComponentCompositionPage_28-07-2026/ComparisonPage"
 import CustomHookPage from "./pages_13-07-2026/CustomHookPage_28-07-2026/CustomHookPage"
 import StudentPage2 from "./pages_13-07-2026/StudentPage1_28-07-2026/StudentPage2"
+import PureComponentPage from "./pages_13-07-2026/Pure Components Page_29-07-2026/PureComponentPage"
+import ReactMemoPage2 from "./pages_13-07-2026/ReactMemoPage2_29-07-2026/ReactMemoPage2";
+import UseMemoPage from "./pages_13-07-2026/UseMemoPage_29-07-2026/UseMemoPage";
+import UseCallbackPage from "./pages_13-07-2026/UseCallbackPage_29-07-2026/UseCallbackPage"
 
 const App = () => {
   return (
@@ -312,6 +316,22 @@ const App = () => {
         <Route
           path="/StudentPage1_28-07-2026"
           element={<StudentPage2/>}
+        />
+        <Route
+          path="/Pure Components Page_29-07-2026"
+          element={<PureComponentPage/>}
+        />
+        <Route
+          path="/ReactMemoPage2_29-07-2026"
+          element={<ReactMemoPage2/>}
+        />
+        <Route
+          path="/UseMemoPage_29-07-2026"
+          element={<UseMemoPage/>}
+        />
+        <Route
+          path="/UseCallbackPage_29-07-2026"
+          element={<UseCallbackPage/>}
         />
       </Routes>
     </BrowserRouter>
