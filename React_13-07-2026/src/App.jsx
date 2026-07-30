@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+// import "./Minproject.css";
 // import "./FormValidation.css";
 // Components
 import ComponentsPage from "./pages_13-07-2026/components/ComponentsPage";
@@ -67,6 +68,13 @@ import PureComponentPage from "./pages_13-07-2026/Pure Components Page_29-07-202
 import ReactMemoPage2 from "./pages_13-07-2026/ReactMemoPage2_29-07-2026/ReactMemoPage2";
 import UseMemoPage from "./pages_13-07-2026/UseMemoPage_29-07-2026/UseMemoPage";
 import UseCallbackPage from "./pages_13-07-2026/UseCallbackPage_29-07-2026/UseCallbackPage"
+import ReactPotralPage from "./pages_13-07-2026/React Potral Page_30-07-2026/ReactPotralPage"
+import Popup_Page from "./pages_13-07-2026/Popup_Page_30-07-2026/Popup_Page"
+import ToolTipPage from "./pages_13-07-2026/ToolTipPage_30-07-2026/ToolTipPage"
+import EventBindingPage from "./pages_13-07-2026/EventBindingPage_30-07-2026/EventBindingPage"
+import MiniProjectPage3 from "./pages_13-07-2026/MiniProjectPage3_30-07-2026/MiniProjectPage3"
+import MiniProjectPage4 from "./pages_13-07-2026/MiniProject4page_30-07-2026/MiniProjectPage4"
+
 
 const App = () => {
   return (
@@ -332,6 +340,30 @@ const App = () => {
         <Route
           path="/UseCallbackPage_29-07-2026"
           element={<UseCallbackPage/>}
+        />
+        <Route
+          path="/React Potral Page_30-07-2026"
+          element={<ReactPotralPage/>}
+        />
+        <Route
+          path="/Popup_Page_30-07-2026"
+          element={<Popup_Page/>}
+        />
+        <Route
+          path="/ToolTipPage_30-07-2026"
+          element={<ToolTipPage/>}
+        />
+        <Route
+          path="/EventBindingPage_30-07-2026"
+          element={<EventBindingPage/>}
+        />
+        <Route
+          path="/MiniProjectPage3_30-07-2026"
+          element={<MiniProjectPage3/>}
+        />
+        <Route
+          path="/MiniProject4page_30-07-2026"
+          element={<MiniProjectPage4/>}
         />
       </Routes>
     </BrowserRouter>
