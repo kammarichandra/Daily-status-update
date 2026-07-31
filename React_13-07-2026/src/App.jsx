@@ -74,8 +74,9 @@ import ToolTipPage from "./pages_13-07-2026/ToolTipPage_30-07-2026/ToolTipPage"
 import EventBindingPage from "./pages_13-07-2026/EventBindingPage_30-07-2026/EventBindingPage"
 import MiniProjectPage3 from "./pages_13-07-2026/MiniProjectPage3_30-07-2026/MiniProjectPage3"
 import MiniProjectPage4 from "./pages_13-07-2026/MiniProject4page_30-07-2026/MiniProjectPage4"
-
-
+import ListRenderingPage from "./pages_13-07-2026/ListRenderingPage_31-07-2026/ListRenderingPage"
+import LazyLoadingPage from "./pages_13-07-2026/LazyLoadingPage_31-07-2026/LazyLoadingPage"
+import MiniprojectPage5 from "./pages_13-07-2026/Mini Project Page 5_31-07-2026/MiniprojectPage5"
 const App = () => {
   return (
     <BrowserRouter>
@@ -364,6 +365,18 @@ const App = () => {
         <Route
           path="/MiniProject4page_30-07-2026"
           element={<MiniProjectPage4/>}
+        />
+        <Route
+          path="/ListRenderingPage_31-07-2026"
+          element={<ListRenderingPage/>}
+        />
+        <Route
+          path="/LazyLoadingPage_31-07-2026"
+          element={<LazyLoadingPage/>}
+        />
+         <Route
+          path="/Mini Project Page 5_31-07-2026"
+          element={<MiniprojectPage5/>}
         />
       </Routes>
     </BrowserRouter>
