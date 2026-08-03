@@ -38,8 +38,8 @@ import RenderingPage from "./pages_13-07-2026/ConditionalRenderingPage_20-07-202
 import MessagePage from "./pages_13-07-2026/MessagePage_20-07-2026/MessagePage"
 import UserPage1 from "./pages_13-07-2026/UserAtunticationPage_20-07-2026/UserPage1"
 import LoadingPage from "./pages_13-07-2026/LoadingPage_20-07-2026/LoadingPage"
-import Login from "./pages_13-07-2026/LoginPage_20-07-2026/Login"
-import Dashboard from "./pages_13-07-2026/DashboardPages_20-07-2026/Dashboard"
+import LoginPage20 from "./pages_13-07-2026/LoginPage_20-07-2026/Login"
+import DashboardPage20 from "./pages_13-07-2026/DashboardPages_20-07-2026/Dashboard"
 import UseEffectPage from "./pages_13-07-2026/UseEffectPage_21-07-2026/UseEffectPage"
 import ApiPage1 from "./pages_13-07-2026/ApiPage1_21-07-2026/ApiPage1"
 import AxiosPage from "./pages_13-07-2026/AxiosPage_21-07-2026/AxiosPage"
@@ -77,6 +77,26 @@ import MiniProjectPage4 from "./pages_13-07-2026/MiniProject4page_30-07-2026/Min
 import ListRenderingPage from "./pages_13-07-2026/ListRenderingPage_31-07-2026/ListRenderingPage"
 import LazyLoadingPage from "./pages_13-07-2026/LazyLoadingPage_31-07-2026/LazyLoadingPage"
 import MiniprojectPage5 from "./pages_13-07-2026/Mini Project Page 5_31-07-2026/MiniprojectPage5"
+import Layout from "./components_13-07-2026/BrowserRouting_03-07-2026/Layout";
+import ProtectedRoute from "./components_13-07-2026/BrowserRouting_03-07-2026/ProtectedRoute";
+import About from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/About";
+import Contact from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/Contact";
+import BrowserDashboard from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/Dashboard";
+import Home from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/Home";
+import BrowserLogin from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/Login";
+import NotFound from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/NotFound";
+import StudentDetails from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/StudentDetails";
+import Students from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/Students";
+import Home1 from "./pages_13-07-2026/MultipleRoutingPage_03-08-2026/Home1";
+import About1 from "./pages_13-07-2026/MultipleRoutingPage_03-08-2026/About1";
+import Services1 from "./pages_13-07-2026/MultipleRoutingPage_03-08-2026/Services1";
+import Contact1 from "./pages_13-07-2026/MultipleRoutingPage_03-08-2026/Contact1";
+import Navbar from "./components_13-07-2026/MultipleRouting_03-08-2026/Navbar";
+import Home2 from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/Home2";
+import About2 from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/About2";
+import Services2 from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/Services2";
+import Contact2 from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/Contact2";
+import Layout1 from "./components_13-07-2026/CompanyWebsite_03-08-2026/Layout1";
 const App = () => {
   return (
     <BrowserRouter>
@@ -224,11 +244,11 @@ const App = () => {
         />
         <Route
           path="/LoginPage_20-07-2026"
-          element={<Login/>}
+          element={<LoginPage20/>}
         />
         <Route
           path="/DashboardPages_20-07-2026"
-          element={<Dashboard/>}
+          element={<DashboardPage20/>}
         />
         <Route
           path="/UseEffectPage_21-07-2026"
@@ -378,6 +398,57 @@ const App = () => {
           path="/Mini Project Page 5_31-07-2026"
           element={<MiniprojectPage5/>}
         />
+{/* 
+        <Route path="/" element={<Layout />}>
+
+          <Route index element={<Home />} />
+
+          <Route path="about" element={<About />} />
+
+          <Route path="contact" element={<Contact />} />
+
+          <Route path="login" element={<BrowserLogin />} />
+
+          <Route path="students" element={<Students />} />
+
+          <Route
+            path="students/:id"
+            element={<StudentDetails />}
+          />
+
+          <Route
+            path="dashboard"
+            element={ <ProtectedRoute isLoggedIn={true}> <BrowserDashboard /></ProtectedRoute> }
+          />
+
+          <Route path="*" element={<NotFound />} />
+        </Route>
+
+
+        <Route path="/" element = {<Navbar/>}>
+
+        <Route index element={<Home1 />} />
+
+        <Route path="about" element={<About1 />} />
+
+        <Route path="services" element={<Services1 />} />
+
+        <Route path="contact" element={<Contact1 />} />
+
+        </Route> */}
+
+
+        <Route path="/" element = {<Layout1/>}>
+
+        <Route index element={<Home2 />} />
+
+        <Route path="about" element={<About2 />} />
+
+        <Route path="services" element={<Services2 />} />
+
+        <Route path="contact" element={<Contact2 />} />
+
+        </Route>
       </Routes>
     </BrowserRouter>
   );
