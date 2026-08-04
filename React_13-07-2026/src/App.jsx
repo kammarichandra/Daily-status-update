@@ -84,19 +84,42 @@ import Contact from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/Contact";
 import BrowserDashboard from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/Dashboard";
 import Home from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/Home";
 import BrowserLogin from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/Login";
-import NotFound from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/NotFound";
+// import NotFound from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/NotFound";
 import StudentDetails from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/StudentDetails";
 import Students from "./pages_13-07-2026/BrowserRoutingPage_03-07-2026/Students";
 import Home1 from "./pages_13-07-2026/MultipleRoutingPage_03-08-2026/Home1";
 import About1 from "./pages_13-07-2026/MultipleRoutingPage_03-08-2026/About1";
 import Services1 from "./pages_13-07-2026/MultipleRoutingPage_03-08-2026/Services1";
 import Contact1 from "./pages_13-07-2026/MultipleRoutingPage_03-08-2026/Contact1";
-import Navbar from "./components_13-07-2026/MultipleRouting_03-08-2026/Navbar";
+// import Navbar from "./components_13-07-2026/MultipleRouting_03-08-2026/Navbar";
 import Home2 from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/Home2";
 import About2 from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/About2";
 import Services2 from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/Services2";
 import Contact2 from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/Contact2";
 import Layout1 from "./components_13-07-2026/CompanyWebsite_03-08-2026/Layout1";
+import DashboardLayout from "./components_13-07-2026/Nested Routing_04-08-2026/DashboardLayout";
+import Dashboard3 from "./pages_13-07-2026/Nested Routing Pages_04-08-2026/Dashboard3";
+import Profile from "./pages_13-07-2026/Nested Routing Pages_04-08-2026/Profile";
+import Settings from "./pages_13-07-2026/Nested Routing Pages_04-08-2026/Settings";
+import Orders from "./pages_13-07-2026/Nested Routing Pages_04-08-2026/Orders";
+import Home3 from "./pages_13-07-2026/Nested Routing Pages_04-08-2026/Home3";
+import Home4 from './pages_13-07-2026/Dynamic Routing Pages_04-08-2026/Home4';
+import Students4 from './pages_13-07-2026/Dynamic Routing Pages_04-08-2026/Students4';
+import StudentDetails4 from './pages_13-07-2026/Dynamic Routing Pages_04-08-2026/StudentDetails4';
+import Home5 from "./pages_13-07-2026/UseNavigatePage_04-08-2026/Home5";
+import Navbar from './components_13-07-2026/UseNavigate_04-08-2026/Navbar';
+import Login5 from "./pages_13-07-2026/UseNavigatePage_04-08-2026/Login5";
+import Dashboard5 from "./pages_13-07-2026/UseNavigatePage_04-08-2026/Dashboard5";
+import Home6 from "./pages_13-07-2026/Passing data page_04-08-2026/Home6";
+import Dashboard6 from "./pages_13-07-2026/Passing data page_04-08-2026/Dashboard6";
+import Navbar6 from "./components_13-07-2026/Passing data Using Routes_04-08-2026/Navbar6";
+import Profile6 from "./pages_13-07-2026/Passing data page_04-08-2026/Profile6"
+import Products from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/Products";
+import ProductDetails from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/ProductDetails";
+import Login from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/Login";
+import NotFound from './pages_13-07-2026/CompanyWebsitePage_03-08-2026/Notfound';
+import Dashboard from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/Dashboard";
+import Careers  from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/Careers"
 const App = () => {
   return (
     <BrowserRouter>
@@ -437,18 +460,84 @@ const App = () => {
 
         </Route> */}
 
+{/* CompanyWebsitePage_03-08-2026 */}
 
-        <Route path="/" element = {<Layout1/>}>
+        {/* <Route path="/" element={<Layout1 />}>
+          
+          <Route index element={<Home2 />} />
 
-        <Route index element={<Home2 />} />
+          
+          <Route path="about" element={<About2 />} />
+          <Route path="services" element={<Services2 />} />
+          <Route path="contact" element={<Contact2 />} />
 
-        <Route path="about" element={<About2 />} />
+          
+          <Route path="products" element={<Products />} />
+          <Route path="products/:id" element={<ProductDetails />} />
 
-        <Route path="services" element={<Services2 />} />
+          
+          <Route path="careers" element={<Careers />} />
 
-        <Route path="contact" element={<Contact2 />} />
+          
+          <Route path="login" element={<Login />} />
 
+          
+          <Route
+            path="dashboard"
+            element={
+              <ProtectedRoute isLoggedIn={true}>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+
+          
+          <Route path="*" element={<NotFound />} />
+        </Route> */}
+
+
+        {/* Nested Routing Pages_04-08-2026 */}
+
+        <Route path="/Nested Routing Pages_04-08-2026" element={<Home3 />} />
+
+        <Route path="/dashboard" element={<DashboardLayout />}>
+          <Route index element={<Dashboard3 />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="settings" element={<Settings />} />
+          <Route path="orders" element={<Orders />} />
         </Route>
+
+       {/* Dynamic Routing Pages_04-08-2026 */}
+
+        <Route path="/Dynamic Routing Pages_04-08-2026" element={<Home4 />} />
+
+        <Route path="/students" element={<Students4 />} />
+
+        <Route
+          path="/students/:id"
+          element={<StudentDetails4 />}
+        />
+
+
+        {/* usenavigate Routing Pages_04-08-2026 */}
+         <Route path="/" element = {<Navbar/>}>
+
+        <Route index element={<Home5 />} />
+
+        <Route path="Dashboard" element={<Dashboard5 />} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="Login" element={<Login5 />} />
+
+        </Route> 
+      {/* Passing data page_04-08-2026 */}
+      <Route path="/Passing data page_04-08-2026" element={<Home6 />} />
+
+        <Route path="/Navbar" element={<Navbar6 />}>
+          <Route index element={<Dashboard6 />} />
+          <Route path="profile6" element={<Profile6 />} />
+          
+        </Route>
+
       </Routes>
     </BrowserRouter>
   );
