@@ -120,6 +120,7 @@ import Login from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/Login";
 import NotFound from './pages_13-07-2026/CompanyWebsitePage_03-08-2026/Notfound';
 import Dashboard from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/Dashboard";
 import Careers  from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/Careers"
+import WebpackPage from "./pages_13-07-2026/Webpack Page_06-08-2026/WebpackPage";
 const App = () => {
   return (
     <BrowserRouter>
@@ -538,6 +539,10 @@ const App = () => {
           
         </Route>
 
+        <Route
+          path="/Webpack Page_06-08-2026"
+          element={<WebpackPage/>}
+        />
       </Routes>
     </BrowserRouter>
   );
