@@ -121,6 +121,17 @@ import NotFound from './pages_13-07-2026/CompanyWebsitePage_03-08-2026/Notfound'
 import Dashboard from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/Dashboard";
 import Careers  from "./pages_13-07-2026/CompanyWebsitePage_03-08-2026/Careers"
 import WebpackPage from "./pages_13-07-2026/Webpack Page_06-08-2026/WebpackPage";
+import Navbar from './components_13-07-2026/React revison Part 3_07-08-2026/Navbar';
+import Home from './pages_13-07-2026/React Revison Part 3Page_07-08-2026/Home';
+import About from './pages_13-07-2026/React Revison Part 3Page_07-08-2026/About';
+import Contact from './pages_13-07-2026/React Revison Part 3Page_07-08-2026/Contact';
+import Login from './pages_13-07-2026/React Revison Part 3Page_07-08-2026/Login';
+import Student from './pages_13-07-2026/React Revison Part 3Page_07-08-2026/Student';
+import Dashboard from './pages_13-07-2026/React Revison Part 3Page_07-08-2026/Dashboard';
+import Profile from './pages_13-07-2026/React Revison Part 3Page_07-08-2026/Profile';
+import Settings from './pages_13-07-2026/React Revison Part 3Page_07-08-2026/Settings';
+import Notfound from "./pages_13-07-2026/React Revison Part 3Page_07-08-2026/Notfound";
+import ProtectedRoute from "../../React_13-07-2026/src/components_13-07-2026/React revison Part 3_07-08-2026/ProtectedRoute"
 const App = () => {
   return (
     <BrowserRouter>
@@ -543,6 +554,39 @@ const App = () => {
           path="/Webpack Page_06-08-2026"
           element={<WebpackPage/>}
         />
+
+         <Navbar />
+
+            <Routes>
+
+                <Route path="/" element={<Home />} />
+
+                <Route path="/about" element={<About />} />
+
+                <Route path="/contact" element={<Contact />} />
+
+                <Route path="/login" element={<Login />} />
+
+                <Route path="/student/:id" element={<Student />} />
+
+                <Route
+                    path="/dashboard"
+                    element={
+                        <ProtectedRoute>
+                            <Dashboard />
+                        </ProtectedRoute>
+                    }
+                >
+
+                    <Route path="profile" element={<Profile />} />
+
+                    <Route path="settings" element={<Settings />} />
+
+                </Route>
+
+                <Route path="*" element={<Notfound />} />
+
+            </Routes>
       </Routes>
     </BrowserRouter>
   );
