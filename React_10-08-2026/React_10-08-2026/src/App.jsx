@@ -15,6 +15,9 @@ import Users from './Pages_10-08-2026/MiniProjectPage_10-08-2026/Dashboard/Users
 import UserDetails from './Pages_10-08-2026/MiniProjectPage_10-08-2026/Dashboard/UserDetails';
 import Overview from "./Pages_10-08-2026/MiniProjectPage_10-08-2026/Dashboard/Overwive";
 import Notfound from './Pages_10-08-2026/MiniProjectPage_10-08-2026/Notfound';
+import ReactHookPage from './Pages_10-08-2026/React Hook & Api Page_11-08-2026/ReactHookPage';
+import ProductStorePage from './Pages_10-08-2026/Product Store Page_11-08-2026/ProductStorePage';
+import EmpPage from './Pages_10-08-2026/EmpPage_11-08-2026/EmpPage';
 function App() {
   return (
     <Routes>
@@ -27,7 +30,7 @@ function App() {
         element={<FoodDeliveryPage />}
       />
 
-       <Route element={<Layout />}>
+      <Route element={<Layout />}>
 
         {/* Public routes */}
 
@@ -88,6 +91,20 @@ function App() {
         />
 
       </Route>
+
+      <Route
+        path="/React Hook & Api Page_11-08-2026"
+        element={<ReactHookPage />}
+      />
+
+      <Route
+        path="/Product Store Page_11-08-2026"
+        element={<ProductStorePage />}
+      />
+      <Route
+        path="/EmpPage_11-08-2026"
+        element={<EmpPage />}
+      />
     </Routes>
   )
 }

@@ -1,487 +1,181 @@
-/* =====================================
-   RESET
-===================================== */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  min-height: 100vh;
-
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif;
-
-  background: #f8fafc;
-  color: #0f172a;
-
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-button,
-input {
-  font: inherit;
-}
-
-
-/* =====================================
-   NAVBAR
-===================================== */
-
-nav {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-
-  min-height: 70px;
-  padding: 0 40px;
-
-  background: #0f172a;
-  color: #ffffff;
-
-  box-shadow:
-    0 2px 10px rgba(15, 23, 42, 0.15);
-}
-
-
-/* Navbar heading */
-
-nav h2 {
-  margin-right: auto;
-
-  font-size: 1.35rem;
-  font-weight: 700;
-
-  color: #ffffff;
-}
-
-
-/* Navbar links */
-
-nav a {
-  position: relative;
-
-  padding: 8px 4px;
-
-  color: #cbd5e1;
-
-  font-size: 0.95rem;
-  font-weight: 500;
-
-  transition:
-    color 0.2s ease,
-    transform 0.2s ease;
-}
-
-nav a:hover {
-  color: #ffffff;
-  transform: translateY(-1px);
-}
-
-
-/* =====================================
-   MAIN CONTENT
-===================================== */
-
-main {
-  width: min(1100px, calc(100% - 40px));
-
-  min-height: calc(100vh - 70px);
-
+.app {
+  max-width: 1200px;
   margin: 0 auto;
-
-  padding: 50px 0;
+  padding: 20px;
 }
 
+/* Header */
 
-/* =====================================
-   PAGE CONTAINER
-===================================== */
-
-main > div,
-main > section {
-  padding: 40px;
-
-  background: #ffffff;
-
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
-
-  box-shadow:
-    0 4px 15px rgba(15, 23, 42, 0.05);
-}
-
-
-/* =====================================
-   HEADINGS
-===================================== */
-
-h1 {
-  margin-bottom: 16px;
-
-  font-size: 2.4rem;
-  line-height: 1.2;
-
-  color: #0f172a;
-}
-
-h2 {
-  margin-bottom: 12px;
-
-  font-size: 1.6rem;
-
-  color: #1e293b;
-}
-
-p {
-  margin-bottom: 20px;
-
-  color: #64748b;
-  font-size: 1rem;
-}
-
-
-/* =====================================
-   BUTTONS
-===================================== */
-
-button {
-  padding: 11px 20px;
-
-  border: none;
-  border-radius: 8px;
-
-  background: #2563eb;
-  color: #ffffff;
-
-  font-size: 0.95rem;
-  font-weight: 600;
-
-  cursor: pointer;
-
-  transition:
-    background 0.2s ease,
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-button:hover {
-  background: #1d4ed8;
-
-  transform: translateY(-1px);
-
-  box-shadow:
-    0 5px 12px rgba(37, 99, 235, 0.25);
-}
-
-button:active {
-  transform: translateY(0);
-}
-
-
-/* =====================================
-   DASHBOARD NAVIGATION
-===================================== */
-
-main nav {
+.header {
   display: flex;
-
-  min-height: auto;
-
-  margin: 25px 0;
-
-  padding: 0;
-
-  background: transparent;
-
-  box-shadow: none;
-
-  gap: 12px;
-}
-
-
-/* Dashboard navigation links */
-
-main nav a {
-  padding: 10px 16px;
-
-  background: #eff6ff;
-
-  border: 1px solid #dbeafe;
-  border-radius: 8px;
-
-  color: #2563eb;
-
-  font-size: 0.9rem;
-  font-weight: 600;
-
-  transition:
-    background 0.2s ease,
-    color 0.2s ease;
-}
-
-main nav a:hover {
-  background: #2563eb;
-  color: #ffffff;
-}
-
-
-/* =====================================
-   HORIZONTAL LINE
-===================================== */
-
-hr {
-  margin: 25px 0;
-
-  border: none;
-
-  border-top: 1px solid #e2e8f0;
-}
-
-
-/* =====================================
-   USER LIST
-===================================== */
-
-main .user-card {
-  display: flex;
-
-  align-items: center;
   justify-content: space-between;
-
-  margin: 12px 0;
-  padding: 16px 20px;
-
-  background: #f8fafc;
-
-  border: 1px solid #e2e8f0;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  padding: 20px;
   border-radius: 10px;
-
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
+  margin-bottom: 25px;
 }
 
-main .user-card:hover {
-  border-color: #bfdbfe;
-
-  box-shadow:
-    0 5px 15px rgba(15, 23, 42, 0.06);
-
-  transform: translateY(-2px);
+.header h1 {
+  margin: 0;
 }
 
-
-/* =====================================
-   USER NAME
-===================================== */
-
-main .user-card span {
-  font-weight: 600;
-  color: #334155;
+.cart-count {
+  font-size: 18px;
+  font-weight: bold;
 }
 
+/* Search */
 
-/* =====================================
-   USER DETAILS LINK
-===================================== */
-
-main .user-card a {
-  padding: 7px 12px;
-
-  border-radius: 6px;
-
-  background: #eff6ff;
-
-  color: #2563eb;
-
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-main .user-card a:hover {
-  background: #2563eb;
-  color: #ffffff;
-}
-
-
-/* =====================================
-   404 PAGE
-===================================== */
-
-.not-found {
-  text-align: center;
-}
-
-.not-found h1 {
-  margin-bottom: 0;
-
-  font-size: 7rem;
-  font-weight: 800;
-
-  color: #2563eb;
-
-  line-height: 1;
-}
-
-.not-found h2 {
-  margin-top: 20px;
-
-  font-size: 1.8rem;
-}
-
-.not-found p {
-  margin: 15px auto 25px;
-
-  max-width: 500px;
-}
-
-
-/* =====================================
-   LOGIN PAGE
-===================================== */
-
-.login-container {
-  max-width: 450px;
-
-  margin: 40px auto;
-}
-
-
-/* =====================================
-   PROFILE PAGE
-===================================== */
-
-.profile-card {
+.search-container {
   display: flex;
-  flex-direction: column;
-
   gap: 10px;
+  margin-bottom: 30px;
+}
 
-  padding: 25px;
+.search-container input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
 
-  background: #f8fafc;
+.search-container button {
+  padding: 12px 20px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
-  border: 1px solid #e2e8f0;
+/* Products */
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  height: 45px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #16a34a;
+}
+
+.category {
+  color: #777;
+  font-size: 14px;
+}
+
+.product-card button {
+  width: 100%;
+  padding: 10px;
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #15803d;
+}
+
+/* Loading */
+
+.loading {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Error */
+
+.error {
+  text-align: center;
+  color: #dc2626;
+  background-color: #fee2e2;
+  padding: 20px;
   border-radius: 10px;
 }
 
+/* No products */
 
-/* =====================================
-   HOME PAGE
-===================================== */
-
-.home-page {
+.no-products {
   text-align: center;
+  padding: 40px;
 }
 
-.home-page h1 {
-  font-size: 3rem;
+/* Cart */
+
+.cart {
+  margin-top: 40px;
+  padding: 25px;
+  background-color: #f3f4f6;
+  border-radius: 10px;
 }
 
-.home-page p {
-  max-width: 650px;
-
-  margin: 0 auto 25px;
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
 }
 
+.cart-item h4 {
+  margin: 0 0 5px;
+}
 
-/* =====================================
-   RESPONSIVE DESIGN
-===================================== */
+.cart-item p {
+  margin: 0;
+}
 
-@media (max-width: 768px) {
+.cart-item button {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  nav {
-    flex-wrap: wrap;
+/* Responsive */
 
-    gap: 14px;
+@media (max-width: 900px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-    padding: 15px 20px;
+@media (max-width: 600px) {
+  .product-list {
+    grid-template-columns: 1fr;
   }
 
-  nav h2 {
-    width: 100%;
-
-    margin-right: 0;
-  }
-
-  main {
-    width: calc(100% - 24px);
-
-    padding: 25px 0;
-  }
-
-  main > div,
-  main > section {
-    padding: 25px 20px;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-  }
-
-  main nav {
-    flex-wrap: wrap;
-  }
-
-  main .user-card {
+  .header {
     flex-direction: column;
-
-    align-items: flex-start;
-
-    gap: 12px;
-  }
-
-  .not-found h1 {
-    font-size: 5rem;
-  }
-}
-
-
-@media (max-width: 480px) {
-
-  nav {
-    align-items: flex-start;
-  }
-
-  nav a {
-    font-size: 0.85rem;
-  }
-
-  main {
-    width: calc(100% - 16px);
-  }
-
-  main > div,
-  main > section {
-    padding: 20px 15px;
-  }
-
-  .not-found h1 {
-    font-size: 4rem;
+    gap: 10px;
   }
 }
