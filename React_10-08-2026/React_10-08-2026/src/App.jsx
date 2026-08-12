@@ -18,6 +18,10 @@ import Notfound from './Pages_10-08-2026/MiniProjectPage_10-08-2026/Notfound';
 import ReactHookPage from './Pages_10-08-2026/React Hook & Api Page_11-08-2026/ReactHookPage';
 import ProductStorePage from './Pages_10-08-2026/Product Store Page_11-08-2026/ProductStorePage';
 import EmpPage from './Pages_10-08-2026/EmpPage_11-08-2026/EmpPage';
+import StatePage from './Pages_10-08-2026/StateManagmentPage_12-08-2026/StatePage';
+import ToolPage from './Pages_10-08-2026/ToolKitPage_12-08-2026/ToolPage';
+import MiniProjectPage2 from './Pages_10-08-2026/Mini Project Page2_12-08-2026/MiniProjectPage2';
+
 function App() {
   return (
     <Routes>
@@ -104,6 +108,18 @@ function App() {
       <Route
         path="/EmpPage_11-08-2026"
         element={<EmpPage />}
+      />
+      <Route
+        path="/StateManagmentPage_12-08-2026"
+        element={<StatePage/>}
+      />
+      <Route
+        path="/ToolKitPage_12-08-2026"
+        element={<ToolPage/>}
+      />
+      <Route
+        path="/Mini Project Page2_12-08-2026"
+        element={<MiniProjectPage2/>}
       />
     </Routes>
   )
