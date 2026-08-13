@@ -21,6 +21,8 @@ import EmpPage from './Pages_10-08-2026/EmpPage_11-08-2026/EmpPage';
 import StatePage from './Pages_10-08-2026/StateManagmentPage_12-08-2026/StatePage';
 import ToolPage from './Pages_10-08-2026/ToolKitPage_12-08-2026/ToolPage';
 import MiniProjectPage2 from './Pages_10-08-2026/Mini Project Page2_12-08-2026/MiniProjectPage2';
+import PerformancePage from './Pages_10-08-2026/PerformancePage_13-08-2026/PerformancePage';
+import E_commercePage from './Pages_10-08-2026/Smart E-Commerce Product Dashboard Page_13-08-2026/E_commercePage';
 
 function App() {
   return (
@@ -121,8 +123,17 @@ function App() {
         path="/Mini Project Page2_12-08-2026"
         element={<MiniProjectPage2/>}
       />
+      <Route
+        path="/PerformancePage_13-08-2026"
+        element={<PerformancePage/>}
+      />
+      <Route
+        path="/Smart E-Commerce Product Dashboard Page_13-08-2026"
+        element={<E_commercePage/>}
+      />
     </Routes>
   )
+
 }
 
 export default App

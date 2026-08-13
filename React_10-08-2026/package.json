@@ -1,0 +1,9 @@
+{
+  "name": "react-10-08-2026",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite",
+    "preview": "vite"
+  }
+}

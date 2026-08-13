@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState } from 'react'
 
 
-const ThemeContext = createContext();
+let ThemeContext = createContext();
 
 function ThemeProvider({ children }) {
   
