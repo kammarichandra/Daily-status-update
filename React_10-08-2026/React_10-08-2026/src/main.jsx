@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 import { Provider } from 'react-redux';
 import { CartProvider } from "./Components_10-08-2026/MiniProject_12-08-2026/Context/CartContext.jsx";
