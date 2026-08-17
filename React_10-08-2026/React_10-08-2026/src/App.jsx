@@ -62,6 +62,9 @@ import JobDetails from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/JobDe
 import Jobs from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/Jobs";
 import ProtectedRoute1 from "./Components_10-08-2026/JobPotral_14-08-2026/Components/ProtectedRoute1";
 import About1 from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/About1";
+import ReactFormPage from "./Pages_10-08-2026/ReactFormValidationPage_17-08-2026/ReactFormPage";
+import EmpRegisterPage from "./Pages_10-08-2026/Emp Registratioin Form Page_17-08-2026/EmpRegisterPage";
+import CheckOutformPage from "./Pages_10-08-2026/CheckOutFormPage_17-08-2026/CheckOutformPage";
 
 
 function App() {
@@ -278,7 +281,18 @@ function App() {
 
       </Route>
 
-
+       <Route
+        path="/ReactFormValidationPage_17-08-2026"
+        element={<ReactFormPage />}
+      />
+      <Route
+        path="/Emp Registratioin Form Page_17-08-2026"
+        element={<EmpRegisterPage />}
+      />
+      <Route
+        path="/CheckOutFormPage_17-08-2026"
+        element={<CheckOutformPage />}
+      />
 
     </Routes>
   );
