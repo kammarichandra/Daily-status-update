@@ -65,7 +65,9 @@ import About1 from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/About1";
 import ReactFormPage from "./Pages_10-08-2026/ReactFormValidationPage_17-08-2026/ReactFormPage";
 import EmpRegisterPage from "./Pages_10-08-2026/Emp Registratioin Form Page_17-08-2026/EmpRegisterPage";
 import CheckOutformPage from "./Pages_10-08-2026/CheckOutFormPage_17-08-2026/CheckOutformPage";
-
+import ApicallsPage from "./Pages_10-08-2026/Apicalls&DataHandling Page_18-08-2026/ApicallsPage";
+import ProductSearchPage from "./Pages_10-08-2026/ProductSearchPage_18-08-2026/ProductSearchPage";
+import WeatherPage from "./Pages_10-08-2026/Weather Dashboard Page_18-08-2026/WeatherPage"
 
 function App() {
   return (
@@ -292,6 +294,19 @@ function App() {
       <Route
         path="/CheckOutFormPage_17-08-2026"
         element={<CheckOutformPage />}
+      />
+      <Route
+        path="/Apicalls&DataHandling Page_18-08-2026"
+        element={<ApicallsPage />}
+      />
+      <Route
+        path="/ProductSearchPage_18-08-2026"
+        element={<ProductSearchPage />}
+      />
+
+      <Route
+        path="/Weather Dashboard Page_18-08-2026"
+        element={<WeatherPage />}
       />
 
     </Routes>
