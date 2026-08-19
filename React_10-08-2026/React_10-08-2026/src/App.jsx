@@ -1,9 +1,14 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import ApplicationPage from "./Pages_10-08-2026/Mini Application Page_10-08-2026/ApplicationPage";
 import "./App.css";
 import "./App1.css";
+
+/* ================================
+   OLD PRACTICE / LEARNING PAGES
+================================ */
+
+import ApplicationPage from "./Pages_10-08-2026/Mini Application Page_10-08-2026/ApplicationPage";
 
 import FoodDeliveryPage from "./Pages_10-08-2026/FoodDeliveryPage_10-08-2026/FoodDeliveryPage";
 
@@ -25,54 +30,97 @@ import E_commercePage from "./Pages_10-08-2026/Smart E-Commerce Product Dashboar
 
 import BrowserRoutingPage from "./Pages_10-08-2026/BrowserRoutingPage_14-08-2026/BrowserRoutingPage";
 
-
-// Browser Routing Pages
-// import Home from "./Components_10-08-2026/Browser Routing_14-08-2026/Pages/Home";
-
-import About from "./Components_10-08-2026/Browser Routing_14-08-2026/Pages/About";
-
-import Contact from "./Components_10-08-2026/Browser Routing_14-08-2026/Pages/Contact";
-
-import Products from "./Components_10-08-2026/Browser Routing_14-08-2026/Pages/Products";
-
-import ProductDetails from "./Components_10-08-2026/Browser Routing_14-08-2026/Pages/ProductDetails";
-
-// import Login from "./Components_10-08-2026/Browser Routing_14-08-2026/Pages/Login";
-
-// import Dashboard from "./Components_10-08-2026/Browser Routing_14-08-2026/Pages/Dashboard";
-
-// import ProtectedRoute from "./Components_10-08-2026/Browser Routing_14-08-2026/Components/ProtectedRoute";
-
-
-// Navbar Layout
-// import Navbar from "./Components_10-08-2026/Browser Routing_14-08-2026/Components/Navbar";
-import Navbar from './Components_10-08-2026/StudentPotral_14-08-2026/Components/Navbar';
-import Home from './Components_10-08-2026/StudentPotral_14-08-2026/Pages/Home';
-import Login from './Components_10-08-2026/StudentPotral_14-08-2026/Pages/Login';
-import CourseDetails from "./Components_10-08-2026/StudentPotral_14-08-2026/Pages/CourseDetails";
-import StudentProfile from "./Components_10-08-2026/StudentPotral_14-08-2026/Pages/Studentprofile";
-import NotFound from "./Components_10-08-2026/StudentPotral_14-08-2026/Pages/Notfound";
-import ProtectedRoute from './Components_10-08-2026/StudentPotral_14-08-2026/Components/ProtectedRoute';
-import Dashboard from './Components_10-08-2026/StudentPotral_14-08-2026/Pages/Dashboard';
-import Navbar1 from "./Components_10-08-2026/JobPotral_14-08-2026/Components/Navbar1";
-import Home1 from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/Home1";
-import Login1 from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/Login1";
-import ApplyJobs from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/Applyjobs";
-import JobDetails from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/JobDetails";
-import Jobs from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/Jobs";
-import ProtectedRoute1 from "./Components_10-08-2026/JobPotral_14-08-2026/Components/ProtectedRoute1";
-import About1 from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/About1";
 import ReactFormPage from "./Pages_10-08-2026/ReactFormValidationPage_17-08-2026/ReactFormPage";
+
 import EmpRegisterPage from "./Pages_10-08-2026/Emp Registratioin Form Page_17-08-2026/EmpRegisterPage";
+
 import CheckOutformPage from "./Pages_10-08-2026/CheckOutFormPage_17-08-2026/CheckOutformPage";
+
 import ApicallsPage from "./Pages_10-08-2026/Apicalls&DataHandling Page_18-08-2026/ApicallsPage";
+
 import ProductSearchPage from "./Pages_10-08-2026/ProductSearchPage_18-08-2026/ProductSearchPage";
-import WeatherPage from "./Pages_10-08-2026/Weather Dashboard Page_18-08-2026/WeatherPage"
+
+import WeatherPage from "./Pages_10-08-2026/Weather Dashboard Page_18-08-2026/WeatherPage";
+
+import AdvanceStateManagmentPage from "./Pages_10-08-2026/Advance State Managment Page_19-08-2026/AdvanceStateManagmentPage";
+
+import ReduxToolPage from "./Pages_10-08-2026/ReduxToolPage_19-08-2026/ReduxToolPage";
+
+
+/* ================================
+   STUDENT PORTAL
+================================ */
+
+import Navbar from "./Components_10-08-2026/StudentPotral_14-08-2026/Components/Navbar";
+
+import HomeStudent from "./Components_10-08-2026/StudentPotral_14-08-2026/Pages/Home";
+
+import LoginStudent from "./Components_10-08-2026/StudentPotral_14-08-2026/Pages/Login";
+
+import CourseDetails from "./Components_10-08-2026/StudentPotral_14-08-2026/Pages/CourseDetails";
+
+import StudentProfile from "./Components_10-08-2026/StudentPotral_14-08-2026/Pages/Studentprofile";
+
+import NotFound from "./Components_10-08-2026/StudentPotral_14-08-2026/Pages/Notfound";
+
+import ProtectedRoute from "./Components_10-08-2026/StudentPotral_14-08-2026/Components/ProtectedRoute";
+
+import DashboardStudent from "./Components_10-08-2026/StudentPotral_14-08-2026/Pages/Dashboard";
+
+
+/* ================================
+   JOB PORTAL
+================================ */
+
+import Navbar1 from "./Components_10-08-2026/JobPotral_14-08-2026/Components/Navbar1";
+
+import Home1 from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/Home1";
+
+import Login1 from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/Login1";
+
+import ApplyJobs from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/Applyjobs";
+
+import JobDetails from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/JobDetails";
+
+import Jobs from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/Jobs";
+
+import ProtectedRoute1 from "./Components_10-08-2026/JobPotral_14-08-2026/Components/ProtectedRoute1";
+
+import About1 from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/About1";
+
+
+/* ================================
+   FOOD DELIVERY APP
+================================ */
+
+import MainLayout from "./Components_10-08-2026/Food Delivery App_19-08-2026/Layout/MainLayout";
+
+import Home from "./Components_10-08-2026/Food Delivery App_19-08-2026/Pages/Home";
+
+import Restaurant from "./Components_10-08-2026/Food Delivery App_19-08-2026/Pages/Restaurant";
+
+import CartPage from "./Components_10-08-2026/Food Delivery App_19-08-2026/Pages/CartPage";
+
+import Checkout from "./Components_10-08-2026/Food Delivery App_19-08-2026/Pages/Checkout";
+
+import Orders from "./Components_10-08-2026/Food Delivery App_19-08-2026/Pages/Orders";
+
+import LoginFood from "./Components_10-08-2026/Food Delivery App_19-08-2026/Pages/Login";
+
+import Profile from "./Components_10-08-2026/Food Delivery App_19-08-2026/Pages/Profile";
+
+// import FoodNotFound from "./Components_10-08-2026/Food Delivery App_19-08-2026/Pages/NotFound";
+
 
 function App() {
+
   return (
+
     <Routes>
 
+      {/* =================================
+          OLD PRACTICE ROUTES
+      ================================= */}
 
       <Route
         path="/Mini Application Page_10-08-2026"
@@ -129,176 +177,26 @@ function App() {
         element={<BrowserRoutingPage />}
       />
 
-
-  
-
-      {/* <Route path="/" element={<Navbar />}>
-
-      
-        <Route
-          index
-          element={<Home />}
-        />
-
-     
-        <Route
-          path="about"
-          element={<About />}
-        />
-
-       
-        <Route
-          path="contact"
-          element={<Contact />}
-        />
-
-        <Route
-          path="products"
-          element={<Products />}
-        />
-
-      
-        <Route
-          path="products/:id"
-          element={<ProductDetails />}
-        />
-
-      
-        <Route
-          path="login"
-          element={<Login />}
-        />
-
-        
-        <Route
-          path="dashboard"
-          element={
-            <ProtectedRoute>
-              <Dashboard />
-            </ProtectedRoute>
-          }
-        />
-
-      </Route>
-
       <Route
-        path="*"
-        element={
-          <div>
-            <h1>404</h1>
-            <p>Page Not Found</p>
-          </div>
-        }
-      /> */}
-
-       {/* <Route path="/" element={<Navbar />}>
-
-        
-        <Route
-          index
-          element={<Home />}
-        />
-
-        
-        <Route
-          path="login"
-          element={<Login />}
-        />
-
-        
-        <Route
-          path="CourseDetails"
-          element={<CourseDetails />}
-        />
-
-       
-        <Route
-          path="StudentProfile"
-          element={<StudentProfile />}
-        />
-
-    
-        <Route
-          path="dashboard"
-          element={
-            <ProtectedRoute>
-              <Dashboard />
-            </ProtectedRoute>
-          }
-        />
-
-       
-        <Route
-          path="*"
-          element={<NotFound />}
-        />
-
-      </Route> */}
-
-      <Route path="/" element={<Navbar1 />}>
-
-        
-        <Route
-          index
-          element={<Home1 />}
-        />
-
-        
-        <Route
-          path="login"
-          element={<Login1 />}
-        />
-
-        <Route
-          path="about"
-          element={<About1 />}
-        />
-
-        
-        <Route
-          path="Jobs"
-          element={<Jobs />}
-        />
-
-        
-        <Route
-          path="JobDetails"
-          element={<JobDetails />}
-        />
-
-       
-        <Route
-          path="dashboard"
-          element={
-            <ProtectedRoute1>
-              <ApplyJobs />
-            </ProtectedRoute1>
-          }
-        />
-
-        <Route
-          path="*"
-          element={<NotFound />}
-        />
-
-      </Route>
-
-       <Route
         path="/ReactFormValidationPage_17-08-2026"
         element={<ReactFormPage />}
       />
+
       <Route
         path="/Emp Registratioin Form Page_17-08-2026"
         element={<EmpRegisterPage />}
       />
+
       <Route
         path="/CheckOutFormPage_17-08-2026"
         element={<CheckOutformPage />}
       />
+
       <Route
         path="/Apicalls&DataHandling Page_18-08-2026"
         element={<ApicallsPage />}
       />
+
       <Route
         path="/ProductSearchPage_18-08-2026"
         element={<ProductSearchPage />}
@@ -309,8 +207,83 @@ function App() {
         element={<WeatherPage />}
       />
 
+      <Route
+        path="/Advance State Managment Page_19-08-2026"
+        element={<AdvanceStateManagmentPage />}
+      />
+
+      <Route
+        path="/ReduxToolPage_19-08-2026"
+        element={<ReduxToolPage />}
+      />
+
+
+      {/* =================================
+          FOOD DELIVERY APP
+          NESTED ROUTING
+      ================================= */}
+
+      <Route element={<MainLayout />}>
+
+        {/* Home */}
+        <Route
+          index
+          element={<Home />}
+        />
+
+        {/* Restaurant */}
+        <Route
+          path="restaurant/:id"
+          element={<Restaurant />}
+        />
+
+        {/* Cart */}
+        <Route
+          path="cart"
+          element={<CartPage />}
+        />
+
+        {/* Checkout */}
+        <Route
+          path="checkout"
+          element={<Checkout />}
+        />
+
+        {/* Orders */}
+        <Route
+          path="orders"
+          element={<Orders />}
+        />
+
+        {/* Profile */}
+        <Route
+          path="profile"
+          element={<Profile />}
+        />
+
+      </Route>
+
+
+      {/* Food Login */}
+      <Route
+        path="/login"
+        element={<LoginFood />}
+      />
+
+
+      {/* =================================
+          FOOD DELIVERY 404
+      ================================= */}
+
+      {/* <Route
+        path="*"
+        element={<FoodNotFound />}
+      /> */}
+
     </Routes>
+
   );
+
 }
 
 export default App;
