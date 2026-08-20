@@ -107,10 +107,9 @@ import Orders from "./Components_10-08-2026/Food Delivery App_19-08-2026/Pages/O
 
 import LoginFood from "./Components_10-08-2026/Food Delivery App_19-08-2026/Pages/Login";
 
-import Profile from "./Components_10-08-2026/Food Delivery App_19-08-2026/Pages/Profile";
-
-// import FoodNotFound from "./Components_10-08-2026/Food Delivery App_19-08-2026/Pages/NotFound";
-
+import PerformencePage1 from "./Pages_10-08-2026/PerformencePage1_20-08-2026/PerformencePage1";
+import DashboardPage from "./Pages_10-08-2026/DashboardPage_20-08-2026/DashboardPage";
+import ExpensesPage from "./Pages_10-08-2026/Expenses Page_20-08-2026/ExpensesPage";
 
 function App() {
 
@@ -216,69 +215,18 @@ function App() {
         path="/ReduxToolPage_19-08-2026"
         element={<ReduxToolPage />}
       />
-
-
-      {/* =================================
-          FOOD DELIVERY APP
-          NESTED ROUTING
-      ================================= */}
-
-      <Route element={<MainLayout />}>
-
-        {/* Home */}
-        <Route
-          index
-          element={<Home />}
-        />
-
-        {/* Restaurant */}
-        <Route
-          path="restaurant/:id"
-          element={<Restaurant />}
-        />
-
-        {/* Cart */}
-        <Route
-          path="cart"
-          element={<CartPage />}
-        />
-
-        {/* Checkout */}
-        <Route
-          path="checkout"
-          element={<Checkout />}
-        />
-
-        {/* Orders */}
-        <Route
-          path="orders"
-          element={<Orders />}
-        />
-
-        {/* Profile */}
-        <Route
-          path="profile"
-          element={<Profile />}
-        />
-
-      </Route>
-
-
-      {/* Food Login */}
       <Route
-        path="/login"
-        element={<LoginFood />}
+        path="/PerformencePage1_20-08-2026"
+        element={<PerformencePage1 />}
       />
-
-
-      {/* =================================
-          FOOD DELIVERY 404
-      ================================= */}
-
-      {/* <Route
-        path="*"
-        element={<FoodNotFound />}
-      /> */}
+      <Route
+        path="/DashboardPage_20-08-2026"
+        element={<DashboardPage />}
+      />
+      <Route
+        path="/Expenses Page_20-08-2026"
+        element={<ExpensesPage />}
+      />
 
     </Routes>
 

@@ -1,13 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-let searchSlice = createSlice({
-  name: "search",
+const initialState = {
+  query: "",
+  cuisine: "All",
+  maxPrice: 1000,
+};
 
-  initialState: {
-    query: "",
-    cuisine: "All",
-    maxPrice: 1000
-  },
+const searchSlice = createSlice({
+  name: "search",
+  initialState,
 
   reducers: {
     setQuery: (state, action) => {
@@ -26,15 +27,15 @@ let searchSlice = createSlice({
       state.query = "";
       state.cuisine = "All";
       state.maxPrice = 1000;
-    }
-  }
+    },
+  },
 });
 
 export const {
   setQuery,
   setCuisine,
   setMaxPrice,
-  clearFilters
+  clearFilters,
 } = searchSlice.actions;
 
 export default searchSlice.reducer;

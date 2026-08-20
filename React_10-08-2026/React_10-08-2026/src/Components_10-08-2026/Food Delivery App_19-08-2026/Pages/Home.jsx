@@ -4,39 +4,52 @@ import SearchBar from "../Components/SearchBar";
 import Sidebar from "../Components/Sidebar";
 import RestaurantCard from "../Components/RestaurantCard";
 
+const EMPTY_ARRAY = [];
+
 function Home() {
   const restaurants = useSelector(
-    (state) => state.restaurants.data
+    (state) => state.restaurants ?? EMPTY_ARRAY
   );
 
-  const {
-    query,
-    cuisine,
-    maxPrice
-  } = useSelector(
-    (state) => state.search
+  const query = useSelector(
+    (state) => state.search?.query ?? ""
   );
 
-  const filteredRestaurants =
-    restaurants.filter((restaurant) => {
-      const matchesQuery =
-        restaurant.name
-          .toLowerCase()
-          .includes(query.toLowerCase()) ||
-        restaurant.cuisine
-          .toLowerCase()
-          .includes(query.toLowerCase());
+  const cuisine = useSelector(
+    (state) => state.search?.cuisine ?? "All"
+  );
 
-      const matchesCuisine = restaurant.cuisine === cuisine;
+  const maxPrice = useSelector(
+    (state) => state.search?.maxPrice ?? 1000
+  );
 
-      const matchesPrice = restaurant.priceForTwo <= maxPrice;
+  const searchQuery = query.trim().toLowerCase();
 
-      return (
-        matchesQuery &&
-        matchesCuisine &&
-        matchesPrice
-      );
-    });
+  const filteredRestaurants = restaurants.filter((restaurant) => {
+    const restaurantName =
+      restaurant.name?.toLowerCase() ?? "";
+
+    const restaurantCuisine =
+      restaurant.cuisine?.toLowerCase() ?? "";
+
+    const matchesQuery =
+      searchQuery === "" ||
+      restaurantName.includes(searchQuery) ||
+      restaurantCuisine.includes(searchQuery);
+
+    const matchesCuisine =
+      cuisine === "All" ||
+      restaurantCuisine === cuisine.toLowerCase();
+
+    const matchesPrice =
+      Number(restaurant.priceForTwo) <= Number(maxPrice);
+
+    return (
+      matchesQuery &&
+      matchesCuisine &&
+      matchesPrice
+    );
+  });
 
   return (
     <div>
@@ -48,20 +61,20 @@ function Home() {
         <Sidebar />
 
         <main>
-          <h2>
-            Restaurants near you
-          </h2>
+          <h2>Restaurants near you</h2>
 
-          <div className="restaurant-grid">
-            {filteredRestaurants.map(
-              (restaurant) => (
+          {filteredRestaurants.length > 0 ? (
+            <div className="restaurant-grid">
+              {filteredRestaurants.map((restaurant) => (
                 <RestaurantCard
                   key={restaurant.id}
                   restaurant={restaurant}
                 />
-              )
-            )}
-          </div>
+              ))}
+            </div>
+          ) : (
+            <p>No restaurants found.</p>
+          )}
         </main>
       </div>
     </div>

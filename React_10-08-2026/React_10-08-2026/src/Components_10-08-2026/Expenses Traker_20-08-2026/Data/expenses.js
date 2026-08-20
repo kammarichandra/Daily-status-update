@@ -1,0 +1,58 @@
+export const initialExpenses = [
+  {
+    id: 1,
+    title: "Grocery Shopping",
+    amount: 2500,
+    category: "Food",
+    date: "2026-08-01",
+  },
+  {
+    id: 2,
+    title: "Uber",
+    amount: 450,
+    category: "Travel",
+    date: "2026-08-02",
+  },
+  {
+    id: 3,
+    title: "Electricity Bill",
+    amount: 1800,
+    category: "Bills",
+    date: "2026-08-03",
+  },
+  {
+    id: 4,
+    title: "Netflix",
+    amount: 649,
+    category: "Entertainment",
+    date: "2026-08-04",
+  },
+  {
+    id: 5,
+    title: "Lunch",
+    amount: 350,
+    category: "Food",
+    date: "2026-08-05",
+  },
+  {
+    id: 6,
+    title: "Bus Ticket",
+    amount: 120,
+    category: "Travel",
+    date: "2026-08-06",
+  },
+  {
+    id: 7,
+    title: "Internet Bill",
+    amount: 999,
+    category: "Bills",
+    date: "2026-08-07",
+  },
+  {
+    id: 8,
+    title: "Movie",
+    amount: 500,
+    category: "Entertainment",
+    date: "2026-08-08",
+  },
+];
