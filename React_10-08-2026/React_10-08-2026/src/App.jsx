@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import "./App1.css";
-
+import "./App2.css";
 /* ================================
    OLD PRACTICE / LEARNING PAGES
 ================================ */
@@ -51,7 +51,7 @@ import ReduxToolPage from "./Pages_10-08-2026/ReduxToolPage_19-08-2026/ReduxTool
    STUDENT PORTAL
 ================================ */
 
-import Navbar from "./Components_10-08-2026/StudentPotral_14-08-2026/Components/Navbar";
+// import Navbar from "./Components_10-08-2026/StudentPotral_14-08-2026/Components/Navbar";
 
 import HomeStudent from "./Components_10-08-2026/StudentPotral_14-08-2026/Pages/Home";
 
@@ -74,7 +74,7 @@ import DashboardStudent from "./Components_10-08-2026/StudentPotral_14-08-2026/P
 
 import Navbar1 from "./Components_10-08-2026/JobPotral_14-08-2026/Components/Navbar1";
 
-import Home1 from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/Home1";
+// import Home1 from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/Home1";
 
 import Login1 from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/Login1";
 
@@ -95,7 +95,7 @@ import About1 from "./Components_10-08-2026/JobPotral_14-08-2026/Pages/About1";
 
 import MainLayout from "./Components_10-08-2026/Food Delivery App_19-08-2026/Layout/MainLayout";
 
-import Home from "./Components_10-08-2026/Food Delivery App_19-08-2026/Pages/Home";
+// import Home from "./Components_10-08-2026/Food Delivery App_19-08-2026/Pages/Home";
 
 import Restaurant from "./Components_10-08-2026/Food Delivery App_19-08-2026/Pages/Restaurant";
 
@@ -110,6 +110,21 @@ import LoginFood from "./Components_10-08-2026/Food Delivery App_19-08-2026/Page
 import PerformencePage1 from "./Pages_10-08-2026/PerformencePage1_20-08-2026/PerformencePage1";
 import DashboardPage from "./Pages_10-08-2026/DashboardPage_20-08-2026/DashboardPage";
 import ExpensesPage from "./Pages_10-08-2026/Expenses Page_20-08-2026/ExpensesPage";
+import RoutingPage from "./Pages_10-08-2026/Routing Page_21-08-2026/RoutingPage";
+import Layout from "./Components_10-08-2026/Browser Routing1_21-08-2026/Dynamic Routing_21-08-2026/Layout/Layout";
+import Home2 from "./Components_10-08-2026/Browser Routing1_21-08-2026/Dynamic Routing_21-08-2026/Pages/Home2";
+import About2 from "./Components_10-08-2026/Browser Routing1_21-08-2026/Dynamic Routing_21-08-2026/Pages/About2";
+import Contact2 from "./Components_10-08-2026/Browser Routing1_21-08-2026/Dynamic Routing_21-08-2026/Pages/Contact2";
+import Products2 from "./Components_10-08-2026/Browser Routing1_21-08-2026/Dynamic Routing_21-08-2026/Pages/Products2";
+import ProductDetails from "./Components_10-08-2026/Browser Routing1_21-08-2026/Dynamic Routing_21-08-2026/Pages/ProductDetails";
+import Home3 from "./Components_10-08-2026/Student Managment1_21-08-2026/Pages/Home3";
+import Login3 from "./Components_10-08-2026/Student Managment1_21-08-2026/Pages/Login3";
+import Dashboard3 from "./Components_10-08-2026/Student Managment1_21-08-2026/Pages/Dashboard3";
+import Students3 from "./Components_10-08-2026/Student Managment1_21-08-2026/Pages/Students3";
+import StudentDetails from "./Components_10-08-2026/Student Managment1_21-08-2026/Pages/StudentDetails";
+import Courses from "./Components_10-08-2026/Student Managment1_21-08-2026/Pages/Courses";
+import Settings from "./Components_10-08-2026/Student Managment1_21-08-2026/Pages/Settings";
+import DashboardLayout from "./Components_10-08-2026/Student Managment1_21-08-2026/Layouts/DashboardLayout";
 
 function App() {
 
@@ -227,6 +242,57 @@ function App() {
         path="/Expenses Page_20-08-2026"
         element={<ExpensesPage />}
       />
+      <Route
+        path="/Routing Page_21-08-2026"
+        element={<RoutingPage />}
+      />
+      {/* 
+        <Route path="/" element={< Navbar/>}>
+          <Route index element={<Home />} />
+          <Route path="About" element={<About />} />
+          <Route path="Contact" element={<Contact />} />
+        </Route> */}
+
+          <Route path="/" element={<Layout />}>
+
+         <Route index element={<Home2 />} />
+
+         <Route path="about" element={<About2 />} />
+
+         <Route path="contact" element={<Contact2 />} />
+
+         <Route path="products" element={<Products2 />} />
+        
+         <Route path="products/:id" element={<ProductDetails />} />
+
+        </Route>
+
+
+      {/* <Route path="/" element={<Home3 />} />
+
+        <Route path="/login" element={<Login3 />} />
+
+        <Route path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <DashboardLayout />
+            </ProtectedRoute>
+          }
+        >
+
+          <Route index element={<Dashboard3 />}/>
+
+          <Route path="students" element={<Students3 />} />
+
+          <Route path="students/:id" element={<StudentDetails />}/>
+
+          <Route path="courses" element={<Courses />} />
+
+          <Route path="settings" element={<Settings />}/>
+
+        </Route>
+
+        <Route path="*" element={<NotFound />}/> */}
 
     </Routes>
 
