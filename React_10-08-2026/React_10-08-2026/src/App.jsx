@@ -125,7 +125,7 @@ import StudentDetails from "./Components_10-08-2026/Student Managment1_21-08-202
 import Courses from "./Components_10-08-2026/Student Managment1_21-08-2026/Pages/Courses";
 import Settings from "./Components_10-08-2026/Student Managment1_21-08-2026/Pages/Settings";
 import DashboardLayout from "./Components_10-08-2026/Student Managment1_21-08-2026/Layouts/DashboardLayout";
-
+import example from "./Pages_10-08-2026/Example/example"
 function App() {
 
   return (
@@ -239,8 +239,8 @@ function App() {
         element={<DashboardPage />}
       />
       <Route
-        path="/Expenses Page_20-08-2026"
-        element={<ExpensesPage />}
+        path="/Example"
+        element={<example />}
       />
       <Route
         path="/Routing Page_21-08-2026"
