@@ -48,3 +48,19 @@ a(b)
 function b(){
     console.log("sdfs")
 }
+
+
+let timer = new Promise((resolve, reject) => {
+    let success = true;
+
+    if (success) {
+        resolve("verification done...");
+    } else {
+        reject("failed...");
+    }
+});
+
+Promise.allSettled([timer])
+    .then((result) => {
+        console.log(result);
+    });
