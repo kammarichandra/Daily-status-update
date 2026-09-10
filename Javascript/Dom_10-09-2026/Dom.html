@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f3f4f6, #e0f2fe);
+            margin: 0;
+            padding: 30px;
+            color: #1f2937;
+        }
+
+        h1 {
+            color: #111827;
+            margin: 12px 0;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        input {
+            padding: 10px 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            margin-right: 10px;
+            width: 220px;
+        }
+
+        button {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            background: #2563eb;
+            color: #fff;
+            cursor: pointer;
+            margin: 8px 6px;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        #container,
+        #container1 {
+            border: 2px solid #cbd5e1;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            width: 420px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        #container h2 {
+            margin-top: 0;
+            color: #0f172a;
+        }
+
+        #para {
+            color: #0f766e;
+            font-weight: bold;
+        }
+
+        .text {
+            color: #4338ca;
+            font-weight: 600;
+        }
+
+        #old {
+            padding: 10px 14px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">hello </h1>
+
+    <h1 id="title1">DOM Practice</h1>
+
+    <p class="text">Paragraph 1</p>
+    <p class="text">Paragraph 2</p>
+
+    <h1 id="old">old title</h1>
+    <input type="text" id="name" value="chandra">
+    <button id="btn"> change </button>
+
+    <div id="container">
+        <h2>Title</h2>
+
+        <p id="para">Hello</p>
+
+        <button>Click Me</button>
+    </div>
+    <button id="btn1"> add para</button>
+
+    <div id="container"></div>
+
+
+    <div id="container1">
+        <p id="para1">Remove me</p>
+    </div>
+
+    <button id="add">Add</button>
+    <button id="remove">Remove</button>
+
+
+    <script src="./Dom.js"></script>
+</body>
+
+</html>
