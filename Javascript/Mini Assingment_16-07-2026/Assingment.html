@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Explorer</title>
+
+    <link rel="stylesheet" href="Assingment.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            🎬 Movie Explorer
+        </div>
+
+        <button id="watchlistBtn">
+            ❤️ Watchlist
+            <span id="watchlistCount">0</span>
+        </button>
+    </header>
+
+
+    <!-- Search Section -->
+    <section class="search-section">
+
+        <h1>Discover Your Next Favorite</h1>
+
+        <p>Search for movies and add them to your watchlist.</p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search movie..."
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+        <p id="errorMessage" class="error"></p>
+
+    </section>
+
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+
+        <select id="genreFilter">
+            <option value="all">All Genres</option>
+            <option value="Drama">Drama</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Action">Action</option>
+            <option value="Crime">Crime</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+        </select>
+
+
+        <select id="sortSelect">
+
+            <option value="default">
+                Sort By
+            </option>
+
+            <option value="name">
+                Name A-Z
+            </option>
+
+            <option value="rating">
+                Rating High-Low
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <!-- Loading -->
+    <div id="loading" class="loading">
+        Loading...
+    </div>
+
+
+    <!-- Movie Container -->
+    <main>
+
+        <div id="movieContainer" class="movie-container">
+        </div>
+
+    </main>
+
+
+    <!-- Watchlist -->
+    <section id="watchlistSection" class="watchlist-section">
+
+        <div class="watchlist-header">
+
+            <h2>❤️ My Watchlist</h2>
+
+            <button id="closeWatchlist">
+                Close
+            </button>
+
+        </div>
+
+        <div id="watchlistContainer"
+             class="movie-container">
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script type="module" src="./app.js"></script>
+
+</body>
+</html>
