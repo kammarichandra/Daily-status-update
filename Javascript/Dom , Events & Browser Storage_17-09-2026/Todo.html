@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Todo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div class="todo-card-body">
+
+          <h2 class="title"> Todo Application </h2>
+
+          <!-- Add Todo -->
+
+                <div class="input-group">
+
+                    <input  type="text"  id="todoInput" placeholder="Enter a todo...">
+
+                    <button id="addBtn"> Add </button>
+
+                </div>
+
+                <!-- Filters -->
+
+                <div class="filters">
+
+                    <button class="filter-btn active" data-filter="all" > All </button>
+
+                    <button class="filter-btn" data-filter="active"> Active </button>
+
+                    <button class="filter-btn" data-filter="completed" > Completed </button>
+
+                </div>
+
+                <!-- Todo List -->
+
+                <div id="todoList"></div>
+
+                <!-- Todo Count -->
+
+                <p id="todoCount"> 0 todos </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./Todo.js"></script>
+</body>
+</html>
