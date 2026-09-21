@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Vehicle.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="container">
+            <h3>🚗 Vehicle Management</h3>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Dashboard -->
+        <section class="dashboard-grid">
+            <div class="stat-card">
+                <h5>Total Vehicles</h5>
+                <h2 id="totalVehicles">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <h5>Available</h5>
+                <h2 id="availableVehicles">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <h5>Sold</h5>
+                <h2 id="soldVehicles">0</h2>
+            </div>
+        </section>
+
+        <!-- Search and Filter -->
+        <section class="toolbar">
+            <div class="search-box">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search vehicle...">
+            </div>
+
+            <div class="filter-box">
+                <select id="typeFilter" class="form-select">
+                    <option value="all">All Types</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                </select>
+            </div>
+
+            <div class="action-box">
+                <button id="addVehicleBtn" class="btn btn-primary">+ Add Vehicle</button>
+            </div>
+        </section>
+
+        <!-- Loading -->
+        <div id="loading" class="d-none loading-box">
+            <div class="spinner"></div>
+            <p>Loading vehicles...</p>
+        </div>
+
+        <!-- Error -->
+        <div id="errorMessage" class="d-none error-box"></div>
+
+        <!-- Empty -->
+        <div id="emptyMessage" class="d-none empty-box">No vehicles found.</div>
+
+        <!-- Vehicle List -->
+        <section>
+            <div id="vehicleContainer" class="vehicle-grid"></div>
+        </section>
+    </main>
+
+    <!-- Vehicle Modal -->
+    <div class="modal" id="vehicleModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Vehicle</h5>
+                    <button type="button" id="closeVehicleModal" class="close-btn" aria-label="Close">×</button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="vehicleForm" class="vehicle-form">
+                        <input type="text" id="vehicleName" placeholder="Vehicle Name" required>
+                        <input type="text" id="vehicleBrand" placeholder="Brand" required>
+
+                        <select id="vehicleType">
+                            <option value="Hatchback">Hatchback</option>
+                            <option value="Sedan">Sedan</option>
+                            <option value="SUV">SUV</option>
+                        </select>
+
+                        <input type="number" id="vehicleYear" placeholder="Year" required>
+                        <input type="number" id="vehiclePrice" placeholder="Price" required>
+
+                        <button type="submit" class="save-btn">Save Vehicle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
