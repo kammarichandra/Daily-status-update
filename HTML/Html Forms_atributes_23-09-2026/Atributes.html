@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- action -->
+
+    <form action="/register" method="get">
+        <input type="text" name="username"><br><br>
+        <button type="submit">Register</button>
+    </form><br><br>
+
+    <!-- post -->
+
+    <form action="/register" method="post">
+        <input type="text" name="username" readonly><br><br>
+        <button type="submit">Register</button>
+    </form><br><br>
+
+    <form name="employeeForm">
+
+        <input type="text" name="employeeName"><br><br>
+
+    </form><br><br>
+
+    <label>Employee ID:</label><br><br>
+
+    <input type="text" value="EMP101" disabled><br><br>
+
+    <!-- max and min length -->
+
+    <label>Age:</label>
+
+    <input type="number" min="18" max="60"><br><br>
+
+    <label>Username:</label>
+    <input type="text" maxlength="20"><br><br>
+
+    <!-- pattren -->
+
+    <label>Mobile Number:</label>
+
+    <input type="tel" name="mobile" pattern="[0-9]{10}" placeholder="Enter 10-digit mobile number" required><br><br>
+
+    <label for="">Username : </label>
+
+    <input type="text" name="username" pattern="[A-Za-z]{3,20}" placeholder="3-20 letters"><br><br>
+</body>
+
+</html>
