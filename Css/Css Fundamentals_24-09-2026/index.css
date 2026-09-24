@@ -1,0 +1,54 @@
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+h1 {
+    font-size: 32px;
+}
+
+/* ID Selector */
+#main-title {
+    color: blue;
+}
+
+/* Class Selector */
+.text {
+    color: green;
+}
+
+/* Descendant Selector */
+.container p {
+    background-color: lightblue;
+}
+
+/* Child Selector */
+.container > p {
+    border: 2px solid blue;
+}
+
+/* Adjacent Sibling Selector */
+h2 + p {
+    color: red;
+}
+
+/* General Sibling Selector */
+h2 ~ p {
+    font-weight: bold;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    border: 2px solid green;
+}
+
+input[type="email"] {
+    border: 2px solid orange;
+}
+
+/* Grouping Selector */
+h1, h2 {
+    font-family: Arial;
+}
+

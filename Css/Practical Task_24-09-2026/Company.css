@@ -1,0 +1,139 @@
+/* Universal selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Element selector */
+body {
+    margin: 0;
+    background: #f7f3ed;
+    color: #243238;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Element selector with a child selector */
+header {
+    padding: 42px 20px;
+    background: #174c4f;
+    color: #fff;
+    text-align: center;
+}
+
+header > h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+header > p {
+    margin: 8px 0 0;
+    color: #c9e7df;
+    font-size: 1.1rem;
+}
+
+/* Descendant selector */
+nav {
+    width: 90%;
+    margin: 22px auto;
+    padding: 16px;
+    border-bottom: 3px solid #e07a5f;
+    background: #fff;
+    text-align: center;
+}
+
+/* Attribute selector */
+nav a[href^="#"] {
+    display: inline-block;
+    margin: 0 14px;
+    color: #174c4f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Pseudo-class selector */
+nav a:hover,
+nav a:focus {
+    color: #e07a5f;
+    text-decoration: underline;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #d9cfc2;
+}
+
+main,
+aside {
+    width: 90%;
+    margin: 22px auto;
+    padding: 24px;
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(36, 50, 56, 0.08);
+}
+
+/* ID selector */
+#Home {
+    padding: 20px;
+    border-left: 6px solid #e07a5f;
+    background: #fff4ed;
+}
+
+/* Group selector */
+h2,
+h3 {
+    color: #174c4f;
+}
+
+section {
+    margin-bottom: 28px;
+}
+
+/* Attribute selector for a specific section */
+section[id="Service"] {
+    padding-top: 8px;
+}
+
+/* Descendant and pseudo-class selectors */
+#Service article {
+    padding: 18px;
+    border: 1px solid #c9e7df;
+    border-left: 5px solid #2a9d8f;
+    background: #f1fbf8;
+}
+
+#Service article:nth-of-type(2) {
+    border-left-color: #e9c46a;
+    background: #fffaf0;
+}
+
+/* Adjacent sibling selector */
+#Service article + article {
+    margin-top: 14px;
+}
+
+/* ID and descendant selectors */
+#Contact p {
+    margin: 6px 0;
+}
+
+aside {
+    background: #eaf4f2;
+}
+
+aside strong {
+    color: #174c4f;
+}
+
+footer {
+    margin-top: 22px;
+    padding: 18px;
+    background: #174c4f;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}

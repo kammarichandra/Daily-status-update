@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practical.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Job Application Form</h1>
+    <p>Please fill the all required details</p>
+    
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required><br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>Gender:</label><br><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br><br>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Contact Details</legend>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Mobile number required" required><br><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" cols="30" rows="4"></textarea>
+
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Location</legend>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">-- Select Your Country --</option>
+                <option value="IND">IND</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+            </select><br><br>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" placeholder="Enter your state" required><br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Enter your city" required><br><br>
+
+            <label for="pincode">Pincode:</label>
+            <input type="number" id="pincode" name="pincode" placeholder="Enter 6 digit pincode" required><br><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Education</legend><br>
+
+            <label for="qualification">Highest Qualification:</label>
+            <select id="qualification" name="qualification" required>
+                <option value="">-- Select Qualification --</option>
+                <option value="btech">B.Tech</option>
+                <option value="bcom">B.Com</option>
+                <option value="mba">MBA</option>
+                <option value="degree">Degree</option>
+            </select><br><br>
+
+            <label for="college">College/University:</label>
+            <input type="text" id="college" name="college" placeholder="Enter your college name" required><br><br>
+
+            <label for="graduationYear">Graduation Year:</label>
+            <select id="graduationYear" name="graduationYear" required>
+                <option value="">-- Graduation Year --</option>
+                <option value="2020">2020</option>
+                <option value="2022">2022</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select><br><br>
+
+            <label for="cgpa">Percentage/CGPA:</label>
+            <input type="text" id="cgpa" name="cgpa" placeholder="Enter your CGPA"><br><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Skills</legend><br>
+
+            <label>Select Your Skills:</label><br><br>
+            <input type="checkbox" id="javascript" name="skills" value="javascript">
+            <label for="javascript">Javascript</label><br><br>
+
+            <input type="checkbox" id="html" name="skills" value="html">
+            <label for="html">HTML</label><br><br>
+
+            <input type="checkbox" id="css" name="skills" value="css">
+            <label for="css">CSS</label><br><br>
+
+            <input type="checkbox" id="react" name="skills" value="react">
+            <label for="react">React</label><br><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Experience</legend><br>
+
+            <label for="experienceLevel">Total Experience:</label>
+            <select id="experienceLevel" name="experienceLevel" required>
+                <option value="">-- Experience --</option>
+                <option value="0-2">0-2</option>
+                <option value="2-3">2-3</option>
+                <option value="3-4">3-4</option>
+                <option value="more-than-4">More than 4</option>
+            </select><br><br>
+
+            <label for="previousCompany">Previous Company:</label>
+            <input type="text" id="previousCompany" name="previousCompany" placeholder="Enter your previous company name" required><br><br>
+
+            <label for="previousTitle">Previous Company Title:</label>
+            <input type="text" id="previousTitle" name="previousTitle" placeholder="Enter your previous company title"><br><br>
+
+            <label for="experienceDetails">Experience Details:</label>
+            <textarea id="experienceDetails" name="experienceDetails" cols="30" rows="4"></textarea>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Resume Upload</legend><br>
+
+            <label for="resume">Resume Upload:</label>
+            <input type="file" id="resume" name="resume" required>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Terms and Conditions</legend><br>
+
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions and confirm that the information provided is correct.</label>
+        </fieldset><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset Form</button>
+    </form>
+</body>
+
+</html>

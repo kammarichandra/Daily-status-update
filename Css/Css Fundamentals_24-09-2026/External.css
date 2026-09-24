@@ -1,0 +1,130 @@
+h1 {
+    color: blue;
+    background-color: yellow;
+}
+
+p {
+    color: green;
+    background-color: lightgray;
+}
+
+.text {
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.imp {
+    font-weight: bold;
+    background-color: #f9f9f9;
+    color: red;
+}
+
+.box {
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+
+}
+
+.box {
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+
+}
+
+#box {
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+
+
+}
+
+/* box[type="box"]{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+
+} */
+
+/* grouping selectors */
+h1,
+p,
+h2 {
+    color: blue;
+}
+
+/* Descendant Selector
+Selects elements inside another element at any level. */
+
+.container p {
+    color: black;
+
+}
+
+.container>p {
+    color: rgb(204, 31, 31);
+
+}
+
+/* Adjacent Sibling Selector
+   Uses +.
+   It selects the element immediately following another element. */
+
+h2+p {
+    color: red;
+}
+
+.box1 {
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #c04f4f;
+}
+/* #inner-box {
+    border: 2px solid black;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 10px;
+    background-color: #756464;
+} */
+.box2{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    padding: 20px;
+    background-color: #6cd86c;
+}
+.box3{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 200px;
+    padding: 20px;
+    background-color: #606831;
+}
+
+/* box sizing */
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: border-box;
+}

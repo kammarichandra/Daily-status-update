@@ -1,0 +1,77 @@
+/* Specificity order
+From higher priority to lower priority: */
+
+/* !important
+    ↓
+Inline CSS
+    ↓
+ID selector
+    ↓
+Class / Attribute / Pseudo-class
+    ↓
+Element selector
+    ↓
+Universal selector */
+
+/* Specificity Calculation
+A useful way to think about specificity is: */
+/* Each type of selector has a specific value:
+   - Inline styles: 1000
+   - IDs: 100
+   - Classes, attributes, pseudo-classes: 10
+   - Elements, pseudo-elements: 1
+*/
+
+/* colors */
+
+h1{
+    color: blue;
+    color: rgba(255, 0, 0, 0.5);
+    background-color: rgb(0, 255, 0);
+};
+
+p{
+    color: rgb(255, 0, 0);
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.hero{
+    height: 400px;
+    width: 100%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkkITFzXQj4DLp3EBk5L_S17eLrU3Kois_fkg_O6ubBdjy4nYpUwzxlcrk&s=10");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box {
+    width: 300px;
+    height: 150px;
+
+    padding: 20px;
+
+    border: 5px solid rgb(179, 79, 22) ;
+     border: 5px solid black ! important ;
+
+    margin: 30px;
+
+    background-color: lightblue;
+}
+
+/* box sizing  */
+/* content box and border box are two different ways to calculate the width and height of an element. */
+
+.box1 {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: content-box;
+    box-sizing: border-box;
+}
+
+/* !important
+!important increases the priority of a declaration. */
+
+p {
+    color : red !important;
+}
