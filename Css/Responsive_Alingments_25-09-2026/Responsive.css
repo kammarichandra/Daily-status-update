@@ -1,0 +1,117 @@
+.box{
+    width: 400px;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+@media(max-width: 768px){
+    .box{
+        width: 100%;
+        background-color: lightgreen;
+    }
+}
+
+@media(max-width: 480px){
+    .box{
+        width: 100%;
+        background-color: lightcoral;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card{
+    padding: 30px;
+    background-color: lightcyan;
+}
+
+@media(min-width: 768px){
+    .container{
+        flex-direction: row;
+    }
+}
+
+/* Breakpoints
+
+Breakpoints are screen widths where your layout changes.
+
+Common practical breakpoints:
+
+Mobile       → 0–480px
+Tablet       → 481–768px
+Laptop       → 769–1024px
+Desktop      → 1025px+ */
+
+ /* Mobile
+@media (max-width: 480px) {
+}
+
+ Tablet
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+ Laptop 
+@media (min-width: 769px) {
+}  */
+
+.card1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: lightpink;
+    width: 200px;
+}
+
+@media (max-width: 768px) {
+
+    .card1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .card1 {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Alignment
+Alignment means controlling where elements are positioned horizontally and vertically. */
+
+h1{
+    align-items: center;
+}
+
+/* .container2{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsalmon;
+}
+.login{
+    padding: 50px;
+    background: white;
+    border-radius: 8px;
+} */
+
+/* grid allingment */
+
+.container2{
+    height: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsalmon;
+}
+.login{
+    padding: 50px;
+    background: white;
+    border-radius: 8px;
+}

@@ -1,0 +1,142 @@
+.box {
+    background-color: blue;
+    padding: 10px;
+    width: 200px;
+    position: static;
+}
+
+.box1 {
+    background-color: rgb(155, 155, 247);
+    padding: 10px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+/* position: absolute
+An absolute element is removed from the normal document flow.
+It is positioned relative to its nearest positioned parent. */
+
+.parent {
+    width: 200px;
+    height: 150px;
+    background-color: tomato;
+    position: relative;
+    padding: 20px;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+
+/* position: fixed
+
+The element is positioned relative to the browser viewport.
+It stays in the same place even when you scroll. */
+
+/* .content {
+     height: 1000px; 
+} */
+
+.button {
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    bottom: 10px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+
+/* position: sticky
+sticky behaves like relative initially.
+When you scroll to a specified position, it sticks to that position. */
+
+.header {
+    background: navy;
+    color: white;
+    padding: 20px;
+    width: 100px;
+    position: sticky;
+    top: 0;
+}
+
+.content1 {
+    /* height: 1200px; */
+    padding: 20px;
+}
+
+/* z-index
+z-index controls which element appears in front of another element when elements overlap.
+Higher z-index → appears in front. */
+
+.box1,
+.box2 {
+    width: 150px;
+    height: 250px;
+    position: absolute;
+}
+
+.box1 {
+    background-color: red;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+
+.box2 {
+    background-color: green;
+    top: 90px;
+    left: 90px;
+    z-index: 2;
+}
+
+/* Stacking Order
+When elements overlap, CSS decides which element should appear on top. */
+
+/* Higher z-index
+      ↓
+Positioned elements
+      ↓
+Normal elements */
+
+
+/* Float
+float moves an element to the left or right, allowing surrounding content to flow around it. */
+
+img {
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+
+/* Clear
+clear prevents an element from moving beside a floated element.
+clear: both;
+means:
+Don't allow this element to appear beside left or right floated elements.
+Practice */
+
+.box3 {
+    width: 150px;
+    height: 100px;
+    background: orange;
+
+    float: left;
+    margin-right: 20px;
+}
+
+.next {
+    clear: both;
+    width: 150px;
+    background: lightblue;
+    padding: 20px;
+}

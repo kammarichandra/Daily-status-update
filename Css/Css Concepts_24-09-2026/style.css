@@ -24,18 +24,20 @@ A useful way to think about specificity is: */
 
 /* colors */
 
-h1{
+h1 {
     color: blue;
     color: rgba(255, 0, 0, 0.5);
     background-color: rgb(0, 255, 0);
-};
+}
 
-p{
+;
+
+p {
     color: rgb(255, 0, 0);
     background-color: rgba(0, 255, 0, 0.5);
 }
 
-.hero{
+.hero {
     height: 400px;
     width: 100%;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkkITFzXQj4DLp3EBk5L_S17eLrU3Kois_fkg_O6ubBdjy4nYpUwzxlcrk&s=10");
@@ -50,8 +52,8 @@ p{
 
     padding: 20px;
 
-    border: 5px solid rgb(179, 79, 22) ;
-     border: 5px solid black ! important ;
+    border: 5px solid rgb(179, 79, 22);
+    border: 5px solid black ! important;
 
     margin: 30px;
 
@@ -73,5 +75,5 @@ p{
 !important increases the priority of a declaration. */
 
 p {
-    color : red !important;
+    color: red !important;
 }
