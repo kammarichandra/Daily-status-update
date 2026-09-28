@@ -1,0 +1,58 @@
+/* atribute selector */
+/* selector[atribute]{
+     property : value
+} */
+
+input[type="text"]{
+    background-color: lightblue;
+    border: 2px solid black;
+}
+
+input[ type="email"]{
+    background-color: lightgreen;
+    border: 2px solid black;
+}
+
+input[type="password"]{
+    background-color: lightsalmon;
+    border: 2px solid black;
+}
+
+/* Descendant Selector
+A descendant selector selects an element inside another element, at any level. */
+
+/* parent child {
+    property : value 
+} */
+
+.container p{
+    color: blue;
+}
+
+
+/* child selector  */
+
+.container > p{
+    color: red;
+}
+
+
+/* Sibling Selectors
+Sibling selectors select elements based on their relationship with another element.
+There are two important sibling selectors:
+Adjacent sibling +
+General sibling ~ */
+
+/* Adjacent sibling + */
+
+/* ele1 + ele2 {
+    property : value
+} */
+
+h2 + p{
+    color: red;
+}
+
+div ~ p {
+    color: blue;
+}

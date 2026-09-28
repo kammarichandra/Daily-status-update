@@ -1,0 +1,82 @@
+/* pseudo class selector */
+/* syntax : 
+
+selector:pseudo-class {
+    property: value;
+} */
+
+button:hover{
+    background-color: blue;
+    color: white;
+}
+input:focus{
+    border: 2px solid black;
+    outline: none;
+}
+button:active{
+    background-color: red;
+    color: white;
+}
+a:visited{
+    color: purple;
+}
+a{
+    text-decoration: none;
+}
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: orange;
+}
+
+li:first-child{
+    color: red;
+}
+li:last-child{
+    color: blue;
+}
+li:nth-child(2){
+    color: orange;
+}
+
+
+/* Pseudo-Elements 
+Pseudo-elements use double colon ::. */
+
+/* syntax : 
+
+selector::Pseudo-Elements{
+    property : value 
+} */
+
+
+h3::before{
+    content: "**";
+    color: gold;
+}
+
+h3::after{
+    content: "✓";
+    color: green;
+}
+
+p::first-letter{
+
+    color: blue;
+    font-weight: bold;
+}
+
+p::first-line{
+    color: red;
+    font-weight: bold;
+}

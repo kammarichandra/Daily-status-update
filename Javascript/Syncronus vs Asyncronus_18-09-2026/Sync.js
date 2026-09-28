@@ -205,6 +205,7 @@ Promise.race([p1, p2, p3])
     .catch((error) => {
         console.log(error)
     })
+
 Promise.allSettled([p1, p2, p3])
     .then((result) => {
         console.log(result);
@@ -212,6 +213,7 @@ Promise.allSettled([p1, p2, p3])
     .catch((error) => {
         console.log(error);
     })
+
 Promise.any([p1, p2, p3])
     .then((result) => {
         console.log(result)
@@ -265,6 +267,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
 // getusers
 
 async function getusers() {
+    
     try {
         let response = await fetch("https://jsonplaceholder.typicode.com/users")
 

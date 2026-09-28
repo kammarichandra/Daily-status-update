@@ -1,0 +1,90 @@
+/* CSS Specificity
+Specificity determines which CSS rule gets applied when multiple rules target the same element. */
+
+/* 1. !important
+2. Inline CSS
+3. ID selector
+4. Class / Attribute / Pseudo-class
+5. Element / Pseudo-element
+6. Universal selector */
+
+
+.msg{
+    color: green;
+}
+
+p{
+    color: red !important;
+}
+#text{
+    color: blue;
+}
+
+
+/* CSS Inheritance
+Inheritance means some CSS properties are automatically passed from a parent element to its children. */
+
+div{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-style: italic;
+}
+span{
+    color: inherit;
+}
+
+/* css variables */
+/* CSS variables allow you to store values and reuse them. */
+/* creating a variable */
+/* :root {
+    --primary-color: blue;
+    --text-color: #333;
+    --spacing: 20px;
+} */
+
+:root {
+    --primary-color: blue;
+    --text-color: #333;
+    --spacing: 10px;
+}
+
+button{
+    background-color: var(--primary-color);
+    color: white;
+    padding:var(--spacing);
+}
+
+
+:root {
+    --primary: #2563eb;
+    --text: #222;
+    --space: 20px;
+}
+
+.card {
+    width: 300px;
+    padding: var(--space);
+    margin: 30px;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    background-color: #f8fafc;
+    color: var(--text);
+    box-sizing: border-box;
+}
+
+.card h2 {
+    color: var(--primary);
+}
+
+.card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: white;
+}
+
+.card button:hover {
+    background-color: #12161f;
+}
