@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background: #1d4ed8;
+        color: white;
+    }
+
+    .navbar nav a {
+        color: white;
+        text-decoration: none;
+        background-color: lightgreen;
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    .navbar nav {
+        gap: 20px;
+        display: flex;
+    }
+
+    .logo {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+
+    }
+
+    @media (max-width: 600px) {
+
+        .navbar {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        flex: 1 1 250px;
+        max-width: 350px;
+        padding: 25px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card button {
+        margin-top: auto;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <header class="navbar">
+
+        <div class="logo">
+            TeamSync
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Employees</a>
+            <a href="#">Reports</a>
+            <a href="#">Settings</a>
+        </nav>
+
+    </header>
+
+    <section class="cards">
+
+        <div class="card">
+            <h2>Employees</h2>
+            <p>Manage employee information.</p>
+            <button>View Employees</button>
+        </div>
+
+        <div class="card">
+            <h2>Payroll</h2>
+            <p>Manage employee salaries.</p>
+            <button>View Payroll</button>
+        </div>
+
+        <div class="card">
+            <h2>Leave</h2>
+            <p>Manage employee leave requests.</p>
+            <button>View Leave</button>
+        </div>
+
+    </section>
+</body>
+
+</html>

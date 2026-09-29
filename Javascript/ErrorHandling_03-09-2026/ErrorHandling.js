@@ -16,7 +16,8 @@ try{
 
 try {
     console.log(user.name)
-} 
+}
+
 catch(error) {
 
     console.log("somethig went wrong");

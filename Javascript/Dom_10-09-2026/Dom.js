@@ -56,7 +56,7 @@ button.addEventListener("click",function(){
 
 })
 
-//DOM Traversing
+//DOM Traversing : 
 // DOM traversal means moving from one element to another, such as :
 // Parent
 // Child

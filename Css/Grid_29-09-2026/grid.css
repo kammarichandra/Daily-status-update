@@ -1,0 +1,85 @@
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: 100px 100px;
+    background-color: lightcyan;
+    gap: 20px;
+   
+}
+.layout{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 70px 1fr 60px;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+header{
+    grid-area: header;
+    background: #2563eb;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+aside{
+    grid-area: sidebar;
+    background: #e5e7eb;
+    text-align: center;
+}
+
+main{
+    grid-area: main;
+    padding: 20px;
+    background: lightblue;
+    text-align: center;
+}
+
+footer{
+    grid-area: footer;
+    padding: 20px;
+    background-color: burlywood;
+    text-align: center;
+}
+
+.container2{
+    display: grid;
+    background-color: darkgray;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100px 100px;
+}
+
+.item1 {
+    grid-column: 1 / 3;
+}
+
+.outer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.nested {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.cards {
+    display: grid;
+    background-color: cornflowerblue;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.card{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+}
