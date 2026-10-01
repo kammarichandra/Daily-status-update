@@ -1,0 +1,279 @@
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: cadetblue;
+    gap: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        width: 30%;
+    }
+}
+
+/* Media Queries
+Media queries allow CSS to apply different styles depending on screen conditions.
+syntax : 
+@media(condition){
+}
+*/
+
+body {
+    background-color: lightgray;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* | Device                      | Breakpoint |
+| --------------------------- | ---------: |
+| Mobile                      |  `< 576px` |
+| Large Mobile / Small Tablet |    `576px` |
+| Tablet                      |    `768px` |
+| Laptop                      |    `992px` |
+| Desktop                     |   `1200px` |
+| Large Desktop               |   `1400px` | */
+
+header {
+    background-color: lightsalmon;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.dashboard {
+    display: block;
+    padding: 15px;
+    height: 100%;
+}
+
+aside {
+    background-color: lightyellow;
+    padding: 10px;
+    margin: 10px;
+}
+
+aside p {
+    padding: 10px;
+}
+
+.content {
+    width: 100%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 10px;
+}
+
+.card1 {
+    background-color: lightcoral;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card1 p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+@media(min-width : 768px) {
+    .dashboard {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 20px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .dashboard {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+}
+
+h1 {
+    font-size: 24px;
+}
+
+@media(min-width : 576px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media(min-width : 768px) {
+    h1 {
+        font-size: 38px;
+    }
+}
+
+@media(min-width : 1200px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+/* clamp()
+clamp() allows you to set a value with a minimum, preferred, and maximum value. */
+/* syntax :  */
+/* font-size : clamp(minimum,prefered,maximum) */
+
+h1 {
+    font-size: clamp(24px, 5vh, 50px);
+}
+
+/* CSS Transitions
+A transition makes a CSS property change smoothly instead of instantly. */
+
+/* transition-property
+transition-duration
+transition-timing-function
+transition-delay */
+
+
+/* without transition */
+
+button {
+    background: blue;
+    color: white;
+}
+
+button:hover {
+    background: green;
+}
+
+/* with transition */
+
+button {
+    background: blue;
+    transition: background 1.43s ease;
+    color: white;
+}
+
+button:hover {
+    background: green;
+}
+
+/* CSS Transforms
+Transforms allow you to visually change an element without changing the normal document flow. */
+/* scale()
+rotate()
+translate()
+skew() */
+.card:hover {
+    transform: scale(1.05);
+    transform: rotate(5deg);
+    transform: translateY(-10px);
+    transform: skew(10deg);
+}
+
+/* Combining Transforms */
+.card:hover {
+    transform: translateY(-10px) scale(1.05) rotate(2deg);
+}
+
+/* hover effects */
+
+.card {
+    padding: 30px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px #0e0d0d;
+    animation: moveBox 2s;
+}
+
+/* @keyframes
+@keyframes defines the different stages of an animation. */
+
+.container1{
+    display: flex;
+    gap: 20px;
+    background-color: burlywood;
+}
+.container1 .box{
+    background-color: tomato;
+    padding: 10px;
+    animation: moveBox 2s ease;
+     /* animation: rotateBox 2s linear infinite; */
+}
+@keyframes moveBox {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(340px);
+    }
+
+}
+
+.ball{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: bounce 1s ease infinite;
+}
+@keyframes bounce {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
