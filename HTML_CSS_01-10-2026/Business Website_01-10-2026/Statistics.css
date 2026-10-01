@@ -1,0 +1,41 @@
+.statistics {
+    padding: 60px 20px;
+    background-color: #0d6efd;
+}
+
+.statistics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+.stat {
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+.stat strong {
+    display: block;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.stat span {
+    display: block;
+    font-size: 16px;
+    color: #e8f1ff;
+    font-weight: 500;
+}
+
+.stat:hover strong {
+    transform: scale(1.08);
+    transition: 0.3s ease;
+}

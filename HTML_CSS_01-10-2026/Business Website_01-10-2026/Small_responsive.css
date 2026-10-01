@@ -1,0 +1,185 @@
+@media (max-width: 400px) {
+
+    /* header */
+
+    .header {
+        padding: 0 12px;
+    }
+
+    .nav {
+        gap: 12px;
+    }
+
+    .nav a {
+        font-size: 13px;
+    }
+
+    .nav-btn {
+        padding: 10px 14px;
+    }
+
+    /* hero */
+
+    .hero {
+        padding: 45px 12px 60px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 12px 16px;
+    }
+
+    .floating-card {
+        top: -18px;
+        left: -5px;
+    }
+
+    /* about */
+
+    .about {
+        padding: 45px 12px;
+    }
+
+    .image-box {
+        height: 240px;
+    }
+
+    .image-content span {
+        font-size: 45px;
+    }
+
+    .image-content p {
+        font-size: 14px;
+    }
+
+    .about-content h2 {
+        font-size: 26px;
+    }
+
+    .section-lable {
+        font-size: 12px;
+    }
+
+
+    /* services */
+
+    .services {
+        padding: 45px 12px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .service-card {
+        padding: 22px 18px;
+    }
+
+    .service-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    /* portifolio */
+
+    .portfolio {
+        padding: 45px 12px;
+    }
+
+    .portfolio-image {
+        height: 180px;
+    }
+
+    .portfolio-content {
+        padding: 20px;
+    }
+
+
+    /* statistics */
+
+    .statistics {
+        padding: 40px 12px;
+    }
+
+    .statistics-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .stat {
+        padding: 12px 5px;
+    }
+
+    .stat strong {
+        font-size: 28px;
+    }
+
+    .stat span {
+        font-size: 12px;
+    }
+
+
+    /* testimonials */
+
+    .testimonials {
+        padding: 45px 12px;
+    }
+
+    .testimonials h2 {
+        font-size: 26px;
+    }
+
+    .testimonial {
+        padding: 22px 18px;
+    }
+
+    .stars {
+        font-size: 17px;
+    }
+
+    /* contact */
+
+    .contact {
+        padding: 45px 12px;
+    }
+
+    .contact-info h2 {
+        font-size: 26px;
+    }
+
+    .contact-form {
+        padding: 20px 15px;
+    }
+
+    .primary-btn {
+        padding: 13px 15px;
+    }
+
+
+    /* footer */
+
+    .fotter {
+        padding: 40px 12px 15px;
+    }
+
+    .footer-logo {
+        font-size: 25px;
+    }
+
+    .footer-grid h3 {
+        font-size: 16px;
+    }
+
+    .copyright p {
+        font-size: 12px;
+    }
+
+}

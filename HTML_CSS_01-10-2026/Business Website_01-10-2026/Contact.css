@@ -1,0 +1,145 @@
+.contact {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.contact-info {
+    grid-column: 1;
+}
+
+.contact-info .section-lable {
+    color: #0d6efd;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.contact-info h2 {
+    color: #172b4d;
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+.contact-info h2 span {
+    color: #0d6efd;
+}
+
+.contact-info > p:last-child {
+    color: #687586;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.contact-details {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.contact-details div {
+    padding: 20px;
+    background-color: #f5f9ff;
+    border: 1px solid #e1e8f0;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.contact-details div:hover {
+    border-color: #0d6efd;
+    transform: translateX(5px);
+}
+
+.contact-details strong {
+    display: block;
+    color: #172b4d;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.contact-details span {
+    color: #687586;
+    font-size: 14px;
+}
+
+.contact-form {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    padding: 35px;
+    background-color: #f5f9ff;
+    border: 1px solid #e1e8f0;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #172b4d;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d8e0ea;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #172b4d;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9aa5b1;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0d6efd;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
