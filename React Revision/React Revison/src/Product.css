@@ -1,0 +1,184 @@
+
+header {
+  background: #1f2937;
+  color: white;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 26px;
+}
+
+button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.add-btn {
+  background: #16a34a;
+}
+
+main {
+  width: 86%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.product-section h2,
+.details h2,
+.form-section h2 {
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card,
+.details-card,
+.form-section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.product-card h3 {
+  margin-bottom: 15px;
+}
+
+.product-card p {
+  margin: 8px 0;
+}
+
+.available {
+  color: green;
+  font-weight: bold;
+}
+
+.out {
+  color: red;
+  font-weight: bold;
+}
+
+.premium {
+  color: #d97706;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.delete {
+  background: #dc2626;
+}
+
+.details {
+  margin-top: 30px;
+}
+
+.details-card {
+  max-width: 600px;
+}
+
+.details-card p {
+  margin: 12px 0;
+}
+
+.form-section {
+  max-width: 600px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancel {
+  background: #6b7280;
+}
+
+.empty {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header {
+    padding: 18px 4%;
+  }
+
+  main {
+    width: 92%;
+  }
+}
+
+@media (max-width: 570px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+  }
+
+  .buttons button {
+    flex: 1;
+  }
+}
