@@ -9,6 +9,11 @@ import Events_formsPage from './Pages/Events_formsPage_07-10-2026/Events_formsPa
 import ListPage from './Pages/List_conditionalPage_07-10-2026/ListPage';
 import UseEffectPage from './Pages/UseEffect Page_07-10-2026/UseEffectPage';
 import UserRegistrationPage from './Pages/UserRegistrationPage_07-10-2026/UserRegistrationPage';
+import ApiPage from './Pages/React Api Page_08-10-2026/ApiPage';
+import LoadingPage from './Pages/Loading Page_08-10-2026/LoadingPage';
+import DynamicPage from './Pages/DynamicPage_08-10-2026/DynamicPage';
+import ApiMethodsPage from './Pages/Api Methods Page_08-10-2026/ApiMethodsPage';
+import UserManagmentPage from './Pages/User Managment Page_08-10-2026/UserManagmentPage';
 
 
 function App() {
@@ -24,6 +29,11 @@ function App() {
       <Route path="/ListPage" element={<ListPage  />} />
       <Route path="/UseEffectPage" element={<UseEffectPage  />} />
       <Route path="/UserRegistrationPage" element={<UserRegistrationPage  />} />
+      <Route path="/ApiPage" element={<ApiPage/>} />
+      <Route path="/LoadingPage" element={<LoadingPage/>} />
+      <Route path="/DynamicPage" element={<DynamicPage/>} />
+      <Route path="/ApiMethodsPage" element={<ApiMethodsPage/>} />
+      <Route path="/UserManagmentPage" element={<UserManagmentPage/>} />
     </Routes>
   );
 }
