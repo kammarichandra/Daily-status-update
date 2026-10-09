@@ -14,6 +14,10 @@ import LoadingPage from './Pages/Loading Page_08-10-2026/LoadingPage';
 import DynamicPage from './Pages/DynamicPage_08-10-2026/DynamicPage';
 import ApiMethodsPage from './Pages/Api Methods Page_08-10-2026/ApiMethodsPage';
 import UserManagmentPage from './Pages/User Managment Page_08-10-2026/UserManagmentPage';
+import ContextApiPage from './Pages/Context Api Page_09-10-2026/ContextApiPage';
+import CostomHookPage from './Pages/CustomHookPage_09-10-2026/CostomHookPage';
+import RevisionPage from './Pages/Revision Page_09-10-2026/RevisionPage';
+import MiniProjectPage from './Pages/Mini Project_09-10-2026/MiniProjectPage';
 
 
 function App() {
@@ -34,6 +38,10 @@ function App() {
       <Route path="/DynamicPage" element={<DynamicPage/>} />
       <Route path="/ApiMethodsPage" element={<ApiMethodsPage/>} />
       <Route path="/UserManagmentPage" element={<UserManagmentPage/>} />
+      <Route path="/ContextApiPage" element={<ContextApiPage/>} />
+      <Route path="/CostomHookPage" element={<CostomHookPage/>} />
+      <Route path="/RevisionPage" element={<RevisionPage/>} />
+      <Route path="/MiniProjectPage" element={<MiniProjectPage/>} />
     </Routes>
   );
 }
