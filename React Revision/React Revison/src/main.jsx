@@ -5,6 +5,8 @@ import App from './App.jsx';
 import "./App.css";
 import "./Employee.css"
 import "./Product.css"
+import "./Dynamic.css"
+import "./Nested.css"
 import ContextApi from './Components/Context Api_09-10-2026/ContextApi.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
