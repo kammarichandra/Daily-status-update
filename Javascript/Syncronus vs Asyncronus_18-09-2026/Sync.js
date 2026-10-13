@@ -195,7 +195,7 @@ Promise.all([p1, p2, p3])
         console.log(result);
     })
     .catch((error) => {
-        console.log(error);
+        console.log( error);
     });
 
 Promise.race([p1, p2, p3])
@@ -223,6 +223,7 @@ Promise.any([p1, p2, p3])
     });
 
 // Async/Await
+
 // async/await provides a cleaner way to work with Promises.
 
 // async function displaydata() {
@@ -245,7 +246,6 @@ async function getdata() {
     } catch (error) {
         console.log(error);
     }
-
 
 }
 getdata()
