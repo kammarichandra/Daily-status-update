@@ -23,11 +23,26 @@ import UsereduserPage from './Pages/Advance SM Page_13-10-2026/UsereduserPage';
 import ContextPage from './Pages/Context Page_13-10-2026/ContextPage';
 import ReduxPage from './Pages/Redux Page_13-10-2026/ReduxPage';
 import EmpPotralPage from './Pages/Emp Potral Page_13-10-2026/EmpPotralPage';
+import RenderingPage from './Pages/Performance Page_14-10-2026/RenderingPage';
+import ReactMemoPage from './Pages/Performance Page_14-10-2026/ReactMemoPage';
+import UseCallbackPage from './Pages/Performance Page_14-10-2026/UseCallbackPage';
 
+import { Suspense } from 'react';
+import Loading from './Components/Performance Optimization_14-10-2026/React Lazy/components/Loading';
+import Dashboard from './Components/Performance Optimization_14-10-2026/React Lazy/pages/Dashboard';
+import { lazy } from 'react';
+import PerformanceTestingPage from './Pages/Performance Page_14-10-2026/PerformanceTestingPage';
+import AnalyticsPage from './Pages/AnalyticsPage_14-10-2026/AnalyticsPage';
+
+
+const Reports = lazy(() => import("./Components/Performance Optimization_14-10-2026/React Lazy/pages/Reports"));
+const Performance = lazy(() => import("./Components/Performance Optimization_14-10-2026/React Lazy/pages/Performance"));
+const Settings = lazy(() => import("./Components/Performance Optimization_14-10-2026/React Lazy/pages/settings"));
 
 function App() {
   return (
     <AuthProvider>
+      <Suspense fallback={<Loading />}>
       <Routes>
         <Route path="/FunctionalPage" element={<FunctionalPage />} />
         <Route path="/ProfilePage" element={<ProfilePage />} />
@@ -52,7 +67,17 @@ function App() {
         <Route path="/ContextPage" element={<ContextPage />} />
         <Route path="/ReduxPage" element={<ReduxPage />} />
         <Route path="/EmpPotralPage" element={<EmpPotralPage />} />
-      </Routes> 
+        <Route path="/RenderingPage" element={<RenderingPage />} />
+        <Route path="/ReactMemoPage" element={<ReactMemoPage />} />
+        <Route path="/UseCallbackPage" element={<UseCallbackPage />} />
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/reports" element={<Reports />} />
+        <Route path="/performance" element={<Performance />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/PerformanceTestingPage" element={<PerformanceTestingPage />} />
+        <Route path="/AnalyticsPage" element={<AnalyticsPage />} />
+      </Routes>
+      </Suspense> 
     </AuthProvider>
   );
 }
