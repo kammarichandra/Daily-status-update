@@ -17,7 +17,7 @@ import UserManagmentPage from './Pages/User Managment Page_08-10-2026/UserManagm
 import ContextApiPage from './Pages/Context Api Page_09-10-2026/ContextApiPage';
 import CostomHookPage from './Pages/CustomHookPage_09-10-2026/CostomHookPage';
 import RevisionPage from './Pages/Revision Page_09-10-2026/RevisionPage';
-import MiniProjectPage from './Pages/Mini Project_09-10-2026/MiniProjectPage';
+// import MiniProjectPage from './Pages/Mini Project_09-10-2026/MiniProjectPage';
 import { AuthProvider } from './Components/React Router_12-10-2026/Protected Routes/Context/AuthContext';
 import UsereduserPage from './Pages/Advance SM Page_13-10-2026/UsereduserPage';
 import ContextPage from './Pages/Context Page_13-10-2026/ContextPage';
@@ -33,11 +33,16 @@ import Dashboard from './Components/Performance Optimization_14-10-2026/React La
 import { lazy } from 'react';
 import PerformanceTestingPage from './Pages/Performance Page_14-10-2026/PerformanceTestingPage';
 import AnalyticsPage from './Pages/AnalyticsPage_14-10-2026/AnalyticsPage';
+import ReusablePage from './Pages/Reusable Page_15-10-2026/ReusablePage';
+import CustomHookPage from './Pages/Reusable Page_15-10-2026/CustomHookPage';
+import ApiServisePage from './Pages/Reusable Page_15-10-2026/ApiServisePage';
+import ErrorHandlingPage from './Pages/Reusable Page_15-10-2026/ErrorHandlingPage';
 
 
 const Reports = lazy(() => import("./Components/Performance Optimization_14-10-2026/React Lazy/pages/Reports"));
 const Performance = lazy(() => import("./Components/Performance Optimization_14-10-2026/React Lazy/pages/Performance"));
 const Settings = lazy(() => import("./Components/Performance Optimization_14-10-2026/React Lazy/pages/settings"));
+import MiniProjectPage from './Pages/Reusable Page_15-10-2026/MiniProjectPage';
 
 function App() {
   return (
@@ -76,6 +81,11 @@ function App() {
         <Route path="/settings" element={<Settings />} />
         <Route path="/PerformanceTestingPage" element={<PerformanceTestingPage />} />
         <Route path="/AnalyticsPage" element={<AnalyticsPage />} />
+        <Route path="/ReusablePage" element={<ReusablePage />} />
+        <Route path="/CustomHookPage" element={<CustomHookPage />} />
+        <Route path="/ApiServisePage" element={<ApiServisePage />} />
+        <Route path="/ErrorHandlingPage" element={<ErrorHandlingPage />} />
+        <Route path="/MiniProjectPage" element={<MiniProjectPage />} />
       </Routes>
       </Suspense> 
     </AuthProvider>

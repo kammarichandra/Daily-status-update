@@ -12,13 +12,16 @@ import ContextApi from './Components/Context Api_09-10-2026/ContextApi.jsx';
 import { Provider } from 'react-redux';
 import { store } from './Components/Advance State Managment_13-10-2026/Redux ToolKit/app/store.js';
 import { EmployeeProvider } from './Components/Emp Potral_13-10-2026/Context/EmpContext.jsx';
+import ErrorBoundary from './Components/Mini Project_15-10-2026/Components/ErrorBoundry.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <ContextApi>
         <Provider store={store}>
           <EmployeeProvider>
-          <App />
+            <ErrorBoundary>
+              <App />
+            </ErrorBoundary>
           </EmployeeProvider>
         </Provider>
       </ContextApi>
