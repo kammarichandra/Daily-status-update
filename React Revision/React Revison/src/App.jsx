@@ -43,6 +43,7 @@ const Reports = lazy(() => import("./Components/Performance Optimization_14-10-2
 const Performance = lazy(() => import("./Components/Performance Optimization_14-10-2026/React Lazy/pages/Performance"));
 const Settings = lazy(() => import("./Components/Performance Optimization_14-10-2026/React Lazy/pages/settings"));
 import MiniProjectPage from './Pages/Reusable Page_15-10-2026/MiniProjectPage';
+import TestingPage from './Pages/TestingPage_16-10-2026/TestingPage';
 
 function App() {
   return (
@@ -86,6 +87,7 @@ function App() {
         <Route path="/ApiServisePage" element={<ApiServisePage />} />
         <Route path="/ErrorHandlingPage" element={<ErrorHandlingPage />} />
         <Route path="/MiniProjectPage" element={<MiniProjectPage />} />
+        <Route path="/TestingPage" element={<TestingPage />} />
       </Routes>
       </Suspense> 
     </AuthProvider>
