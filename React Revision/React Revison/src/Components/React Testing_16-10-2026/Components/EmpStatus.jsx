@@ -1,11 +1,9 @@
 import React from 'react'
 
-function EmpStatus() {
-    let isLoggedin = false
-
+function EmpStatus({ isLoggedin }) {
   return (
     <div>
-        <p>{isLoggedin ? "active" : "onLeave"}</p>
+        <p>{isLoggedin ? 'Active' : 'onLeave'}</p>
     </div>
   )
 }

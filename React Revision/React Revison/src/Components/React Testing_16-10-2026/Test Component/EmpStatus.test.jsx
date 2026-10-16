@@ -4,13 +4,13 @@ import EmpStatus from '../Components/EmpStatus'
 
 
 it('shows Active when employee is active', () => {
-  render(<EmpStatus active={true} />)
+  render(<EmpStatus isLoggedin={true} />)
 
   expect(screen.getByText('Active')).toBeInTheDocument()
 })
 
 it('shows Inactive when employee is inactive', () => {
-  render(<EmpStatus active={false} />)
+  render(<EmpStatus isLoggedin={false} />)
 
   expect(screen.getByText('onLeave')).toBeInTheDocument()
 })
