@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+}
+
+header {
+  background: #2563eb;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1,
+header p {
+  margin: 5px;
+}
+
+.layout {
+  display: flex;
+  min-height: 350px;
+}
+
+aside {
+  width: 220px;
+  background: #f3f4f6;
+  padding: 20px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside li {
+  padding: 12px 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+main {
+  flex: 1;
+  padding: 30px;
+}
+
+footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
