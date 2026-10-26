@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: #2563eb;
+  color: white;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.user-info {
+  font-size: 16px;
+}

@@ -36,6 +36,11 @@ import PortalEmpDetails from './Components/React Emp Potral_23-10-2026/Pages/Emp
 import PortalEmpList from './Components/React Emp Potral_23-10-2026/Pages/EmpList';
 import PortalDashboard from './Components/React Emp Potral_23-10-2026/Pages/Dashboard1';
 import PortalLogin from './Components/React Emp Potral_23-10-2026/Pages/Login2';
+import Login from './Components/React Test_26-10-2026/Iterration Testing/Components/Login';
+import ProtectedRoute from './Components/React Test_26-10-2026/Routing/Components/ProtectedRoute';
+import Dashboard from './Components/React Test_26-10-2026/Iterration Testing/Pages/Dashboard';
+import EmpList from './Components/React Test_26-10-2026/Iterration Testing/Components/EmpList';
+import EmpDetails from './Components/React Test_26-10-2026/Iterration Testing/Pages/EmpDetails';
 
 function PerformanceLayout() {
   return (
@@ -154,10 +159,39 @@ function App() {
           </Route>
         </Route>
       </Route>
+
+      <EmployeeProvider>
+          <Route path="/" element={<Login />} />
+
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/employees"
+            element={
+              <ProtectedRoute>
+                <EmpList />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/employees/:id"
+            element={
+              <ProtectedRoute>
+                <EmpDetails />
+              </ProtectedRoute>
+            }
+          />
+    </EmployeeProvider>
       {/* 404 Page */}
       <Route path="*" element={<NotFound />} />
-
-
     </Routes>
   )
 }
