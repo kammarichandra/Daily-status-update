@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Updating Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        .employee-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+            width: 300px;
+            border-radius: 8px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="heading">Employee Management System</h1>
+
+    <p id="description">
+        Welcome to the Employee Management System.
+    </p>
+
+    <button id="updateBtn">Update Content</button>
+
+    <hr>
+
+    <h2>Employee Details</h2>
+
+    <div id="employeeDetails"></div>
+
+    <hr>
+
+    <h2>Enter Your Name</h2>
+
+    <input type="text" id="nameInput" placeholder="Enter employee name">
+
+    <button id="displayBtn">Display Name</button>
+
+    <p id="output"></p>
+
+    <script src="./Content.js"></script>
+</body>
+</html>

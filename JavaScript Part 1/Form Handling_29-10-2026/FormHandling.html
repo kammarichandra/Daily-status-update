@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form id="registerForm">
+
+        <input type="text" id="name" placeholder="Enter Name" required><br><br>
+        <span id="nameError" class="error"></span>
+
+        <input type="email" id="email" placeholder="Enter Email" required><br><br>
+        <span id="emailError" class="error"></span>
+
+        <input type="password" id="password" placeholder="Enter Password" required><br><br>
+        <span id="passwordError" class="error"></span>
+
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required><br><br>
+        <span id="confirmError" class="error"></span>
+
+        <input type="tel" id="phone" placeholder="Enter Phone Number" required><br><br>
+        <span id="phoneError" class="error"></span>
+
+        <label for="role">Select Role:</label>
+        <select id="role">
+            <option value="">Select Role</option>
+            <option value="Student">Student</option>
+            <option value="Employee">Employee</option>
+        </select>
+
+        <div id="extraField"></div>
+
+        <button type="submit" id="submitBtn" disabled> Register </button>
+
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <h3>Live Preview</h3>
+    <div id="preview"></div>
+
+    <h3>Submitted Data</h3>
+    <div id="output"></div>
+
+    <script src="./FormHandling.js"></script>
+</body>
+</html>

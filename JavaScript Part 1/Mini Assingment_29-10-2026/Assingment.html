@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="./Assingment.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Task Management App</h1>
+
+        <!-- Add / Edit Task Form -->
+        <form id="taskForm">
+
+            <input type="text" id="taskInput" placeholder="Enter your task" >
+
+            <button type="submit" id="submitBtn"> Add Task </button>
+
+            <button type="button" id="cancelBtn" hidden> Cancel </button>
+
+            <p id="errorMessage"></p>
+        </form>
+
+        <!-- Search and Filter -->
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search tasks..." >
+
+            <select id="filterSelect">
+                <option value="all">All Tasks</option>
+                <option value="pending">Pending</option>
+                <option value="completed">Completed</option>
+            </select>
+        </div>
+
+        <p id="taskCount"></p>
+
+        <!-- Task List -->
+        <ul id="taskList"></ul>
+
+        <p id="emptyMessage">No tasks available.</p>
+    </div>
+
+    <script src="./Assingment.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2563eb;
+}
+
+form,
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#cancelBtn {
+    background-color: #64748b;
+}
+
+#cancelBtn[hidden] {
+    display: none;
+}
+
+#errorMessage {
+    color: red;
+    font-size: 14px;
+}
+
+#taskCount {
+    color: #555;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #f1f5f9;
+    border-radius: 5px;
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-wrap: anywhere;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-actions {
+    display: flex;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+.edit-btn {
+    background-color: #f59e0b;
+}
+
+.delete-btn {
+    background-color: #dc2626;
+}
+
+#emptyMessage {
+    text-align: center;
+    color: #777;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    form,
+    .controls {
+        flex-wrap: wrap;
+    }
+
+    form input,
+    .controls input,
+    .controls select {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .task-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .task-actions {
+        align-self: flex-end;
+    }
+}
