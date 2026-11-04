@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Users Management</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 30px;
+            background: #f4f4f4;
+        }
+
+        input {
+            padding: 12px;
+            width: 300px;
+        }
+
+        .user {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Users Management</h2>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search by name or email"
+    >
+
+    <p id="status"></p>
+
+    <div id="userList"></div>
+
+    <script src="./Api.js"></script>
+
+</body>
+</html>
