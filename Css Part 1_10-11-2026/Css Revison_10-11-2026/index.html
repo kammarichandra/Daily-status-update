@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of CSS</title>
+
+    <!-- Internal CSS -->
+    <style>
+        p {
+            color: blue;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <!-- Inline CSS -->
+    <h1 style="color: red; text-align: center;">
+        Welcome to CSS Learning
+    </h1>
+
+    <!-- Internal CSS -->
+    <p>
+        CSS is used to style HTML elements and create attractive web pages.
+    </p>
+
+    <!-- External CSS -->
+    <button>Click Me</button>
+<hr>
+<br><br>
+    <!-- css selectors -->
+
+    <div class="container">
+
+        <h1>Student Registration Form</h1>
+
+        <p>Enter your details to register.</p>
+
+        <form>
+
+            <h2>Personal Details</h2>
+
+            <label>Full Name</label>
+            <input type="text" class="input-field" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" class="input-field" placeholder="Enter your email">
+
+            <label>Phone Number</label>
+            <input type="tel" class="input-field" placeholder="Enter phone number">
+
+            <h2>Academic Details</h2>
+
+            <label>Qualification</label>
+            <input type="text" class="input-field" placeholder="Enter qualification">
+
+            <label>Department</label>
+            <input type="text" class="input-field" placeholder="Enter department">
+
+            <button type="submit" id="submit-btn">
+                Register
+            </button>
+
+        </form>
+    </div>
+    <hr>
+    <br><br>
+
+    <!-- combinator selecotor -->
+
+    <nav class="navbar">
+
+        <h2>My Website</h2>
+
+        <ul class="menu">
+
+            <li><a href="#">Home</a></li>
+
+            <li class="dropdown">
+                <a href="#">Courses</a>
+
+                <ul class="submenu">
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">React</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+        <p>Welcome to our website!</p>
+        <p>Learn HTML, CSS and JavaScript.</p>
+
+    </nav>
+
+</body>
+</html>

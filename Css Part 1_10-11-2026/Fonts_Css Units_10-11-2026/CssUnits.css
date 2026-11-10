@@ -1,0 +1,66 @@
+
+/* Root Font Size */
+html {
+    font-size: 16px;
+}
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* 1. PX - Fixed Size */
+.px-box {
+    width: 200px;
+    height: 80px;
+    background-color: lightblue;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* 2. Percentage - Parent Relative */
+.percentage-box {
+    width: 80%;
+    height: 80px;
+    background-color: lightgreen;
+    margin-bottom: 20px;
+}
+
+/* 3. EM - Parent Font Size Relative */
+.em-box {
+    font-size: 20px;
+    padding: 2em;
+    background-color: lightcoral;
+    margin-bottom: 20px;
+}
+
+/* 4. REM - Root Font Size Relative */
+.rem-box {
+    width: 20rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: lightyellow;
+    margin-bottom: 20px;
+}
+
+/* 5. VH - Viewport Height */
+.vh-box {
+    height: 20vh;
+    background-color: lightpink;
+    margin-bottom: 20px;
+}
+
+/* 6. VW - Viewport Width */
+.vw-box {
+    width: 50vw;
+    height: 80px;
+    background-color: lightgray;
+    margin-bottom: 20px;
+}

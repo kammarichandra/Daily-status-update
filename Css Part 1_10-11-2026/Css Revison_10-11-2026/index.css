@@ -1,0 +1,150 @@
+
+button {
+    background-color: green;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+/* css selestors */
+
+
+/* 1. Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Element Selector */
+h1 {
+    color: darkblue;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* 3. Class Selector */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* 4. ID Selector */
+#submit-btn {
+    background-color: blue;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 5. Grouping Selector */
+h2, p, label {
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Additional styling */
+body {
+    background-color: #f2f4f8;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 400px;
+    max-width: 90%;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#submit-btn:hover {
+    background-color: darkblue;
+}
+
+/* combinator selector  */
+
+.navbar {
+    background-color: #4d4444;
+    padding: 20px;
+}
+
+.navbar h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* 1. Descendant Selector */
+.menu a {
+    color: white;
+}
+
+/* 2. Child Selector */
+.menu > li {
+    border-bottom: 2px solid transparent;
+}
+
+/* 3. Adjacent Sibling Selector */
+h2 + .menu {
+    margin-top: 10px;
+}
+
+/* 4. General Sibling Selector */
+h2 ~ p {
+    color: lightblue;
+    margin-top: 15px;
+}
+
+/* Dropdown menu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    min-width: 150px;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: green;
+}
+
+.menu > li:hover {
+    border-bottom: 2px solid orange;
+}

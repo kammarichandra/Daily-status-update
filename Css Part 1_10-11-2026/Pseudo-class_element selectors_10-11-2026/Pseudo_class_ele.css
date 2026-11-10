@@ -1,0 +1,212 @@
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    width: 380px;
+    max-width: 90%;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* 1. Focus Pseudo-class */
+input:focus {
+    border: 2px solid blue;
+    background-color: #f0f7ff;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* 2. Hover Pseudo-class */
+button:hover {
+    background: darkblue;
+}
+
+/* 3. Active Pseudo-class */
+button:active {
+    background: red;
+    transform: scale(0.97);
+}
+
+/* List styling */
+.features {
+    margin-top: 25px;
+    padding-left: 20px;
+}
+
+/* 4. First-child */
+.features li:first-child {
+    color: green;
+    font-weight: bold;
+}
+
+/* 5. Last-child */
+.features li:last-child {
+    color: red;
+    font-weight: bold;
+}
+
+/* 6. Nth-child */
+.features li:nth-child(even) {
+    background-color: #e0e7ff;
+}
+
+.features li:nth-child(odd) {
+    background-color: #f8fafc;
+}
+/* element selector */
+
+.profile-card {
+    width: 380px;
+    max-width: 90%;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* 1. Before Pseudo-element */
+.profile-card::before {
+    content: "EMPLOYEE PROFILE";
+    display: block;
+    text-align: center;
+    background: #1d4ed8;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.profile-header {
+    text-align: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: #2563eb;
+    color: white;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+h1 {
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+/* 2. After Pseudo-element */
+h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: blue;
+    margin: 12px auto;
+}
+
+h3 {
+    color: gray;
+    font-size: 15px;
+}
+
+/* 3. First-letter Pseudo-element */
+.description::first-letter {
+    font-size: 35px;
+    color: blue;
+    font-weight: bold;
+}
+
+/* 4. First-line Pseudo-element */
+.description::first-line {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.description {
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.profile-details ul {
+    list-style: none;
+}
+
+.profile-details li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* 5. Selection Pseudo-element */
+::selection {
+    background: yellow;
+    color: black;
+}

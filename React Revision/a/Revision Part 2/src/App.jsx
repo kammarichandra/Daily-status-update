@@ -41,6 +41,11 @@ import ProtectedRoute from './Components/React Test_26-10-2026/Routing/Component
 import Dashboard from './Components/React Test_26-10-2026/Iterration Testing/Pages/Dashboard';
 import EmpList from './Components/React Test_26-10-2026/Iterration Testing/Components/EmpList';
 import EmpDetails from './Components/React Test_26-10-2026/Iterration Testing/Pages/EmpDetails';
+import Login3 from './Components/Mini Project_28-10-2026/Pages/Login3';
+import Dashboard3 from './Components/Mini Project_28-10-2026/Pages/Dashboard3';
+import Emp3 from './Components/Mini Project_28-10-2026/Pages/Emp3';
+import EmployeeDetails3 from './Components/Mini Project_28-10-2026/Pages/EmpDetails3';
+import Empform from './Components/Mini Project_28-10-2026/Components/Empform';
 
 function PerformanceLayout() {
   return (
@@ -190,6 +195,18 @@ function App() {
             }
           />
     </EmployeeProvider>
+
+
+    <Route path="/" element={<Login3 />} />
+
+          <Route path="/dashboard" element={<Dashboard3 />} />
+
+          <Route path="/employees" element={<Emp3 />} />
+
+          <Route path="/employees/:id" element={<EmployeeDetails3 />} />
+
+          <Route path="/add-employee" element={<Empform />}/>
+
       {/* 404 Page */}
       <Route path="*" element={<NotFound />} />
     </Routes>

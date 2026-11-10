@@ -1,0 +1,85 @@
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #eef2f7;
+}
+
+.employee-container {
+    width: 700px;
+    max-width: 90%;
+    margin: 40px auto;
+}
+
+/* Element Selector */
+h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 25px;
+}
+
+/* Class Selector */
+.employee-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+/* Element Selector */
+h2 {
+    color: green;
+}
+
+/* Class Selector */
+.employee-name {
+    color: blue;
+    margin-bottom: 12px;
+}
+
+/* ID Selector */
+#name {
+    color: red;
+}
+
+/* Multiple styles on same element */
+h2.employee-name#name {
+    color: purple;
+}
+
+/* Other class selectors */
+.designation {
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.department,
+.email,
+.location {
+    margin-bottom: 10px;
+}
+
+/* ID Selector */
+#view-btn {
+    background: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* !important */
+.location {
+    color: red !important;
+}
