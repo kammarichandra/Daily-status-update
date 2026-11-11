@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task and Employee Management</title>
+    <link rel="stylesheet" href="./Task.css">
+</head>
+<body>
+
+    <header>
+        <h1>Task & Employee Management</h1>
+    </header>
+
+    <main>
+
+        <!-- Employee Form -->
+        <section>
+            <h2>Add Employee</h2>
+
+            <form id="employeeForm">
+                <input type="text" id="empName"
+                    placeholder="Employee Name" required>
+
+                <input type="email" id="empEmail"
+                    placeholder="Employee Email" required>
+
+                <input type="text" id="empRole"
+                    placeholder="Employee Role" required>
+
+                <button type="submit">Add Employee</button>
+            </form>
+        </section>
+
+        <!-- Employee Search -->
+
+        <section>
+            <h2>Employee Directory</h2>
+
+            <input type="text" id="searchEmployee"
+                placeholder="Search Employee">
+
+            <div id="employeeList"></div>
+        </section>
+
+        <!-- Task Form -->
+
+        <section>
+            <h2>Add Task</h2>
+
+            <form id="taskForm">
+                <input type="text" id="taskName"
+                    placeholder="Task Name" required>
+
+                <select id="taskEmployee" required>
+                    <option value="">Select Employee</option>
+                </select>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <!-- Task List -->
+         
+        <section>
+            <h2>Task Management</h2>
+
+            <select id="taskFilter">
+                <option value="All">All Tasks</option>
+                <option value="Pending">Pending</option>
+                <option value="Completed">Completed</option>
+            </select>
+
+            <div id="taskList"></div>
+        </section>
+
+    </main>
+
+    <script type="module" src="./App.js"></script>
+
+</body>
+</html>

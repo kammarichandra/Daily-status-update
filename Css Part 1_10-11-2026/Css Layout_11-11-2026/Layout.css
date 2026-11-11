@@ -1,0 +1,57 @@
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  flex: 1 1 200px;
+  padding: 30px;
+  background: #dbeafe;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+/* Flexbox Allingment and wrapping */
+/* Employee Container */
+.employee-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Employee Card */
+.employee-card {
+    background-color: white;
+
+    padding: 20px;
+    border-radius: 10px;
+
+    width: 220px;
+
+    /* Flex Properties */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+
+    text-align: center;
+
+    box-shadow: 0 2px 5px gray;
+}
+
+.employee-card h2 {
+    color: #2563eb;
+}
+
+.employee-card p {
+    color: #64748b;
+}

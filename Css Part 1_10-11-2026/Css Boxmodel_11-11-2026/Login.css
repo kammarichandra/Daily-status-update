@@ -1,0 +1,112 @@
+/* Login Container */
+.login-container {
+    width: 380px;
+    background-color: white;
+
+    /* Margin */
+    margin: 30px;
+
+    /* Padding */
+    padding: 35px;
+
+    /* Border */
+    border: 2px solid #dbeafe;
+
+    /* Border Radius */
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #334155;
+}
+
+/* Input Fields */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+
+    font-size: 14px;
+}
+
+/* Different Border Style */
+.form-group input:focus {
+    outline: none;
+    border: 2px solid #2563eb;
+}
+
+/* Options */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+.options a,
+.register a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* Login Button */
+button {
+    width: 100%;
+    padding: 13px;
+
+    background-color: #2563eb;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Register */
+.register {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+
+nav a {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 5px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}

@@ -1,0 +1,163 @@
+
+.navbar {
+  position: relative;
+  padding: 20px;
+  background: #1e293b;
+  color: white;
+}
+
+.notification {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: red;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.sticky-menu {
+  position: sticky;
+  top: 0;
+  padding: 15px;
+  background: lightblue;
+}
+
+.help-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+/* position */
+
+
+.container {
+  position: relative;
+  height: 250px;
+}
+
+.card {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+}
+
+.card-one {
+  background: coral;
+  left: 20px;
+  z-index: 1;
+}
+
+.card-two {
+  background: lightblue;
+  left: 80px;
+  top: 30px;
+  z-index: 2;
+}
+
+.card-three {
+  background: lightgreen;
+  left: 140px;
+  top: 60px;
+  z-index: 3;
+}
+
+
+/* overflow */
+
+.container1 {
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+/* Activity Card */
+.activity-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.activity-card h2 {
+    color: #2563eb;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* 1. Overflow Hidden */
+.hidden-box {
+    width: 100%;
+    height: 100px;
+
+    background-color: #dbeafe;
+    padding: 15px;
+    border: 2px solid #2563eb;
+
+    overflow: hidden;
+}
+
+/* 2. Overflow Scroll */
+.scroll-box {
+    width: 100%;
+    height: 180px;
+
+    background-color: #dcfce7;
+    padding: 15px;
+    border: 2px solid #16a34a;
+
+    overflow: scroll;
+}
+
+.scroll-box p {
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* 3. Overflow Auto */
+.auto-box {
+    width: 100%;
+    height: 150px;
+
+    background-color: #fef3c7;
+    padding: 15px;
+    border: 2px solid #d97706;
+
+    overflow: auto;
+}
+
+.auto-box p {
+    margin-bottom: 12px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .activity-card {
+        padding: 12px;
+    }
+}

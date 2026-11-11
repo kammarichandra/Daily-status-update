@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Positioning.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="navbar">
+        Employee Management System
+        <span class="notification">3</span>
+    </header>
+
+    <div class="sticky-menu">Dashboard Menu</div>
+
+    <div class="content">
+        <h2>Welcome to EMS</h2>
+        <p>Employee Dashboard Content</p>
+    </div>
+
+    <button class="help-button">Help</button>
+
+    <h1>Z-index and overlaping </h1>
+
+
+    <div class="container">
+        <div class="card card-one">Card 1</div>
+        <div class="card card-two">Card 2</div>
+        <div class="card card-three">Card 3</div>
+    </div>
+
+    <h2> Overflow Properties </h2>
+
+    <div class="container1">
+
+        <h1>Employee Activity History</h1>
+        <p class="subtitle">Track employee activities and updates</p>
+
+        <!-- Overflow Hidden -->
+        <section class="activity-card">
+            <h2>1. Overflow Hidden</h2>
+            <div class="hidden-box">
+                Employee Kammari Sekhar logged into the Employee
+                Management System at 09:00 AM. He updated his
+                profile information, changed his contact details,
+                submitted attendance records, completed assigned
+                tasks, and updated his project status successfully.
+            </div>
+        </section>
+
+        <!-- Overflow Scroll -->
+        <section class="activity-card">
+            <h2>2. Overflow Scroll</h2>
+            <div class="scroll-box">
+                <p>09:00 AM - Employee logged into the system.</p>
+                <p>09:30 AM - Employee updated profile information.</p>
+                <p>10:00 AM - Employee checked assigned tasks.</p>
+                <p>11:00 AM - Employee completed a project task.</p>
+                <p>12:00 PM - Employee submitted attendance.</p>
+                <p>01:00 PM - Employee started lunch break.</p>
+                <p>02:00 PM - Employee returned from lunch break.</p>
+                <p>03:00 PM - Employee updated project progress.</p>
+                <p>04:00 PM - Employee attended team meeting.</p>
+                <p>05:00 PM - Employee completed daily activities.</p>
+                <p>06:00 PM - Employee logged out of the system.</p>
+            </div>
+        </section>
+
+        <!-- Overflow Auto -->
+        <section class="activity-card">
+            <h2>3. Overflow Auto</h2>
+            <div class="auto-box">
+                <p>Employee: Chandra Sekhar</p>
+                <p>Department: Software Development</p>
+                <p>Login Time: 09:00 AM</p>
+                <p>Logout Time: 06:00 PM</p>
+                <p>Activity: Developed employee dashboard.</p>
+                <p>Activity: Fixed responsive design issues.</p>
+                <p>Activity: Integrated employee API.</p>
+                <p>Activity: Updated database records.</p>
+                <p>Activity: Completed assigned development tasks.</p>
+                <p>Activity: Participated in project discussion.</p>
+                <p>Activity: Submitted daily work report.</p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
