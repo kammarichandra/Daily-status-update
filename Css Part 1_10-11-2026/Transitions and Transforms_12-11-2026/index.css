@@ -1,0 +1,155 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #1e293b;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 12px;
+
+    /* Transition */
+    transition: all 0.3s ease;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+/* Card Hover Animation */
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Image Rotation */
+.card:hover img {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.card h2 {
+    margin: 15px 0 8px;
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: transform 0.3s ease,background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #1d4ed8;
+}
+
+/* Active Button */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+.container1 {
+    max-width: 1100px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.container1 h2 {
+    margin-bottom: 25px;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+
+    /* Box Shadow */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+    transition: box-shadow 0.3s ease,transform 0.3s ease;
+}
+
+.card h1 {
+    color: #2563eb;
+    margin: 15px 0;
+}
+
+.card p {
+    color: #64748b;
+}
+
+/* Hover Shadow */
+
+.card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transform: translateY(-5px);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}

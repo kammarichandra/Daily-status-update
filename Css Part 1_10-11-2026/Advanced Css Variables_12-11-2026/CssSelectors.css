@@ -1,0 +1,167 @@
+
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+/* Form */
+.employee-form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* 1. Attribute Selectors */
+
+/* Select text input */
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Select all required inputs */
+
+input[required] {
+    border-left: 4px solid #2563eb;
+}
+
+/* Select select elements */
+
+select[id] {
+    width: 100%;
+    padding: 10px;
+}
+
+/* 2. Child Selector (>) */
+
+.employee-list > .employee {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+/* 3. Adjacent Sibling Selector (+) */
+
+h1 + .employee-form {
+    border-top: 4px solid #2563eb;
+}
+
+/* Select paragraph immediately after heading */
+
+.employee h3 + p {
+    color: #64748b;
+    margin-top: 8px;
+}
+
+/* 4. :not() Selector */
+
+/* Select all inputs except checkbox and radio */
+
+input:not([type="checkbox"]):not([type="radio"]) {
+    font-size: 15px;
+}
+
+/* 5. :nth-child() Selector */
+
+/* Select first employee */
+
+.employee:nth-child(1) {
+    border-left: 5px solid #2563eb;
+}
+
+/* Select even employee cards */
+
+.employee:nth-child(even) {
+    background-color: #e0f2fe;
+}
+
+/* Select odd employee cards */
+
+.employee:nth-child(odd) {
+    border-radius: 12px;
+}
+
+/* 6. :focus Selector */
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #2563eb;
+    box-shadow: 0 0 5px #2563eb50;
+}
+
+/* 7. :checked Selector */
+
+input[type="checkbox"]:checked + label {
+    color: green;
+    font-weight: bold;
+}
+
+input[type="radio"]:checked {
+    accent-color: #2563eb;
+}
+
+input[type="radio"]:checked + label {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Button */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    .employee-form {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

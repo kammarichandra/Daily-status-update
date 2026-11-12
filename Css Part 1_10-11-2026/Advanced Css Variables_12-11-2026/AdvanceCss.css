@@ -1,0 +1,160 @@
+
+/* 1. Define CSS Variables */
+
+:root {
+    /* Colors */
+    --primary-color: #2563eb;
+    --secondary-color: #1e293b;
+    --background-color: #f1f5f9;
+    --card-color: #ffffff;
+    --text-color: #333333;
+    --muted-color: #64748b;
+
+    /* Font Sizes */
+    --heading-size: 28px;
+    --subheading-size: 20px;
+    --normal-size: 16px;
+
+    /* Spacing */
+    --small-space: 10px;
+    --medium-space: 20px;
+    --large-space: 30px;
+
+    /* Border Radius */
+    --border-radius: 10px;
+
+    /* Shadow */
+    --card-shadow: 0 3px 10px #00000015;
+}
+
+/* 2. Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: var(--normal-size);
+}
+
+/* 3. Navbar */
+
+.navbar {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: var(--medium-space) 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-btn {
+    padding: var(--small-space);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+/* 4. Main Container */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: var(--large-space) auto;
+}
+
+h1 {
+    font-size: var(--heading-size);
+    margin-bottom: var(--small-space);
+}
+
+.subtitle {
+    color: var(--muted-color);
+    margin-bottom: var(--large-space);
+}
+
+/* 5. Dashboard Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--medium-space);
+}
+
+.card {
+    background-color: var(--card-color);
+    padding: var(--large-space);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+}
+
+.card h3 {
+    font-size: var(--subheading-size);
+    margin-bottom: var(--small-space);
+}
+
+.card h2 {
+    color: var(--primary-color);
+    font-size: var(--heading-size);
+}
+
+.card p {
+    color: var(--muted-color);
+    margin-top: var(--small-space);
+}
+
+/* 6. Employee Profile */
+
+.profile {
+    background-color: var(--card-color);
+    padding: var(--large-space);
+    margin-top: var(--large-space);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+}
+
+.profile h2 {
+    margin-bottom: var(--medium-space);
+}
+
+.profile p {
+    margin-bottom: var(--small-space);
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--small-space) var(--medium-space);
+    border: none;
+    border-radius: var(--border-radius);
+    margin-top: var(--small-space);
+    cursor: pointer;
+}
+
+/* 7. Responsive Design */
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: var(--small-space);
+    }
+}
