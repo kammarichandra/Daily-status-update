@@ -1,0 +1,207 @@
+ 
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #222;
+}
+
+section {
+    margin: 40px auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 1. Image Zoom on Hover */
+
+.image-container {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.2);
+}
+
+/* 2. Button Color Transition */
+
+.btn {
+    padding: 12px 30px;
+    background: royalblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: background-color 0.4s ease,
+                transform 0.3s ease;
+}
+
+.btn:hover {
+    background: darkblue;
+    transform: scale(1.1);
+}
+
+/* 3. Card Border Animation */
+
+.card {
+    width: 300px;
+    padding: 25px;
+    margin: auto;
+
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    transition: border-color 0.4s ease,
+                transform 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+.card:hover {
+    border-color: royalblue;
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* 4. Navigation Underline Animation */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 3px;
+
+    background: royalblue;
+    left: 0;
+    bottom: 0;
+
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* 5. Input Focus Animation */
+
+input {
+    width: 280px;
+    padding: 12px;
+
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+
+    transition: border-color 0.3s ease,box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: royalblue;
+    box-shadow: 0 0 8px rgba(65,105,225,0.4);
+}
+
+
+/* 1. CSS Variables */
+
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e293b;
+    --background-color: #f1f5f9;
+    --text-color: #333333;
+    --white-color: #ffffff;
+
+    --border-radius: 10px;
+    --transition: 0.3s ease;
+    --card-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    --spacing: 20px;
+}
+
+/* 3. Reusable Button Class */
+
+.btn {
+    padding: 12px 25px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    opacity: 0.85;
+    transform: translateY(-3px);
+}
+
+/* 4. Reusable Card Class */
+
+.card {
+    background: var(--white-color);
+    padding: var(--spacing);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* 5. Heading Class */
+
+.heading {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing);
+}
+
+/* 6. Container Class */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: var(--spacing);
+}
