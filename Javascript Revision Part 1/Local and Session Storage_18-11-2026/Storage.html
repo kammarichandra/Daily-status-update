@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Local Storage</h1>
+
+    <input type="text" id="username" placeholder="Enter Username">
+
+    <button onclick="saveUser()">Save</button>
+    <button onclick="getUser()">Get User</button>
+    <button onclick="removeUser()">Remove User</button>
+
+    <p id="result"></p>
+
+    <hr>
+
+    <h1>Session Storage</h1>
+
+    <input type="text" id="user" placeholder="Enter Name">
+
+    <button onclick="saveSession()">Save Session</button>
+    <button onclick="getSession()">Get Session</button>
+
+    <p id="output"></p>
+
+    <hr>
+    <h2>JavaScript Browser Events</h2>
+
+    <p id="load"></p>
+    <p id="resize"></p>
+    <p id="keyboard">Press any key</p>
+
+
+    <script src="./Storage.js"></script>
+</body>
+
+</html>

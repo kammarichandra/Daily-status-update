@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="clickBtn">Click</button>
+
+    <p id="output"></p>
+
+    <hr>
+    <h2>Event bubbling and caputring </h2>
+    <div id="parent" style="padding:30px; background:lightblue;">
+        Parent
+
+        <button id="child">Child Button</button>
+    </div>
+
+    <hr>
+    <h2>Event Deligation </h2>
+
+    <ul id="items">
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Spring Boot</li>
+    </ul>
+    <hr>
+
+    <h1>Form handling and validation</h1>
+
+    <h2>Registration Form</h2>
+
+    <form id="registerForm">
+
+        <input type="text" id="name" placeholder="Enter Name">
+        <br><br>
+
+        <input type="email" id="email" placeholder="Enter Email">
+        <br><br>
+
+        <input type="password" id="password" placeholder="Enter Password">
+        <br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <p id="result"></p>
+    
+    <script src="./event.js"></script>
+</body>
+
+</html>

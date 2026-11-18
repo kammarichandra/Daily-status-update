@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Employee Data Management System</h1>
+
+        <!-- Summary Cards -->
+
+        <div class="summary">
+
+            <div class="card">
+                <h3>Total Employees</h3>
+                <p id="totalEmployees">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Monthly Payroll</h3>
+                <p id="totalPayroll">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>Average Net Salary</h3>
+                <p id="averageSalary">₹0</p>
+            </div>
+
+        </div>
+
+        <!-- Employee Form -->
+
+        <div class="form-section">
+
+            <h2 id="formTitle">Add Employee</h2>
+
+            <form id="employeeForm">
+
+                <div class="form-grid">
+
+                    <input type="text" id="empId" placeholder="Employee ID" required>
+
+                    <input type="text" id="empName" placeholder="Employee Name" required>
+
+                    <input type="email" id="empEmail" placeholder="Email" required>
+
+                    <select id="department" required>
+                        <option value="">Select Department</option>
+                        <option>IT</option>
+                        <option>HR</option>
+                        <option>Finance</option>
+                        <option>Sales</option>
+                        <option>Marketing</option>
+                    </select>
+
+                    <input type="text" id="designation" placeholder="Designation" required>
+
+                    <input type="number" id="salary" placeholder="Basic Monthly Salary" min="1" step="0.01" required>
+
+                </div>
+
+                <button type="submit" class="save-btn" id="saveBtn">
+                    Add Employee
+                </button>
+
+                <button type="button" onclick="resetForm()">
+                    Cancel
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Search, Filter and Sort -->
+
+        <div class="table-section">
+
+            <h2>Employee Records</h2>
+
+            <div class="controls">
+
+                <input type="text" id="searchInput" placeholder="Search by name or employee ID...">
+
+                <select id="filterDepartment">
+                    <option value="all">All Departments</option>
+                    <option>IT</option>
+                    <option>HR</option>
+                    <option>Finance</option>
+                    <option>Sales</option>
+                    <option>Marketing</option>
+                </select>
+
+                <select id="sortSelect">
+                    <option value="default">Sort By</option>
+                    <option value="name">Name (A-Z)</option>
+                    <option value="salaryHigh">Salary (High-Low)</option>
+                    <option value="salaryLow">Salary (Low-High)</option>
+                </select>
+
+            </div>
+
+            <!-- Employee Table -->
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Designation</th>
+                        <th>Basic Salary</th>
+                        <th>Net Salary</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="employeeTable"></tbody>
+
+            </table>
+
+            <p id="emptyMessage" class="empty">
+                No employees found.
+            </p>
+
+        </div>
+
+        <!-- Department Grouping -->
+
+        <div class="group-section">
+
+            <h2>Department-wise Employee Grouping</h2>
+
+            <div id="departmentGroups"></div>
+
+        </div>
+
+    </div>
+
+    <Script src="./Assingment1.js"></Script>
+</body>
+
+</html>
