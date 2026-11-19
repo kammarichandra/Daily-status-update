@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assingment.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Product Management</h1>
+
+    <input type="text" id="search" placeholder="Search products">
+
+    <select id="category">
+        <option value="">All Categories</option>
+    </select>
+
+    <h2>Add Product</h2>
+
+    <input type="text" id="name" placeholder="Product Name">
+    <input type="number" id="price" placeholder="Product Price">
+
+    <button onclick="addProduct()">Add Product</button>
+
+    <p id="message"></p>
+
+    <h2>Product List</h2>
+
+    <div id="loading">Loading products...</div>
+
+    <div id="products"></div>
+
+    <script src="./Assingment.js"></script>
+</body>
+
+</html>
