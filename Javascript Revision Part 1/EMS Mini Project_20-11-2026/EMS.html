@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="./Ems.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Employee Management System</h2>
+        <button id="addBtn">+ Add Employee</button>
+    </header>
+
+    <section class="dashboard">
+        <div class="card">
+            <h3>Total Employees</h3>
+            <h2 id="totalCount">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Active Employees</h3>
+            <h2 id="activeCount">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Inactive Employees</h3>
+            <h2 id="inactiveCount">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Departments</h3>
+            <h2 id="departmentCount">0</h2>
+        </div>
+    </section>
+
+    <section class="container">
+
+        <h2>Employee Registration</h2>
+
+        <form id="employeeForm">
+
+            <input type="hidden" id="editId">
+
+            <input id="empId" placeholder="Employee ID" required>
+            <input id="name" placeholder="Full Name" required>
+            <input id="email" type="email" placeholder="Email" required>
+            <input id="phone" type="tel" placeholder="Phone" required>
+
+            <select id="department" required>
+                <option value="">Select Department</option>
+                <option>IT</option>
+                <option>HR</option>
+                <option>Finance</option>
+                <option>Sales</option>
+                <option>Marketing</option>
+            </select>
+
+            <input id="designation" placeholder="Designation" required>
+
+            <input id="salary" type="number" placeholder="Salary" min="1" required>
+
+            <input id="joiningDate" type="date" required>
+
+            <select id="status">
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+            </select>
+
+            <button type="submit" id="submitBtn">Save Employee</button>
+            <button type="reset" id="resetBtn">Clear</button>
+        </form>
+
+        <h2>Employee Records</h2>
+
+        <div class="filters">
+            <input id="searchInput" placeholder="Search by name or ID">
+
+            <select id="departmentFilter">
+                <option value="">All Departments</option>
+                <option>IT</option>
+                <option>HR</option>
+                <option>Finance</option>
+                <option>Sales</option>
+                <option>Marketing</option>
+            </select>
+
+            <select id="statusFilter">
+                <option value="">All Status</option>
+                <option>Active</option>
+                <option>Inactive</option>
+            </select>
+
+            <select id="sortBy">
+                <option value="">Sort By</option>
+                <option value="name">Name</option>
+                <option value="salary">Salary</option>
+                <option value="joiningDate">Joining Date</option>
+            </select>
+        </div>
+
+        <p id="message"></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                    <th>Designation</th>
+                    <th>Salary</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="employeeTable"></tbody>
+        </table>
+
+        <button id="apiBtn">Import Sample Employees from API</button>
+        <p id="loading"></p>
+
+    </section>
+
+    <script type="module" src="./Main.js"></script>
+</body>
+
+</html>
